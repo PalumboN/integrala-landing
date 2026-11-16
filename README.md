@@ -1,108 +1,77 @@
-# INTEGRALA — Website
+# INTEGRALA
 
-Static site with no build process or JavaScript dependencies.
-It can be opened directly in a browser or published on any static hosting
-(GitHub Pages, Cloudflare Pages, Netlify, Vercel).
+**Software engineering boutique.**
 
-## Positioning
+We understand technology deeply. We design, build, integrate and evolve
+effective, maintainable software systems that are ready for change.
 
-INTEGRALA is presented as a **software engineering boutique**: we understand
-technology deeply and we design, build, integrate and evolve effective,
-maintainable software systems that are ready for change. Applied AI is part of
-broader software engineering capabilities, not a separate promise.
+INTEGRALA is a small, technically strong team. We work with organizations whose
+systems and processes are complex, and we take responsibility for the result:
+sound engineering decisions, maintainable architecture and software that keeps
+evolving instead of being rewritten. No buzzwords, no exaggerated promises —
+just engineering, explained clearly.
 
-The site deliberately avoids invented clients, testimonials, case studies,
-metrics or commercial track records. Its own design is offered as evidence of our
-engineering standards. The main conversion goal is **contact**; the contact app is
-the mechanism visitors reach when they choose to get in touch, and is not sold or
-described on the site.
+## What we do
 
-## Structure
+- **Software engineering** — we design and build applications and services from
+  scratch, with clear architecture, tested code and maintenance in mind.
+- **System integration** — we connect applications, services and data so
+  information flows reliably between internal and external systems.
+- **Modernization and evolution** — we update existing systems incrementally,
+  reducing risk and preserving what already works.
+- **Applied AI** — we incorporate artificial intelligence where it adds real
+  value, integrated with the organization's data and processes.
 
-| File | Description |
-| --- | --- |
-| `index.html` | Landing page (hero, engineering approach, capabilities, technical expertise, contact). |
-| `about.html` | About page: the founder and the technical background behind the team. |
-| `styles.css` | Styles and both themes. |
-| `app.js` | Progressive enhancement: theme switcher, language switcher, and footer year. |
-| `robots.txt` | Crawling rules. Allows search engines and AI agents. |
-| `sitemap.xml` | Site map (landing + about). |
-| `llms.txt` | Plain-text summary for AI assistants/agents. |
-| `site.webmanifest` | Installation metadata (PWA). |
-| `favicon.svg` / `favicon.ico` / `apple-touch-icon.png` / `icon-192.png` / `icon-512.png` | Icons. |
-| `og.svg` / `og.png` | Social card (Open Graph / Twitter). `og.png` is the one referenced. Regenerate with `rsvg-convert -w 1200 -h 630 og.svg -o og.png`. |
+## How we work
 
-Both pages share the same header (brand, navigation, language switch, theme
-switch and contact button) and the same footer, so navigation and branding stay
-consistent.
+- **Understand before building.** First the domain, the business goals and the
+  real constraints; then the technology.
+- **Grounded technical decisions.** Languages, architectures and tools chosen
+  for their trade-offs and maintenance cost, not for being trendy.
+- **Build to maintain.** Readable, tested and documented code that other people
+  can understand and change.
+- **Anticipate evolution.** Systems that can change in parts, without rewriting
+  everything for every new requirement.
 
-## Themes
+## Technical depth
 
-There are two themes, both defined with CSS variables in `styles.css`:
+We work on the fundamentals, not a wall of logos:
 
-- **Gray** (`data-theme="gray"`): light warm gray background, dark contrast bands.
-- **Dark** (`data-theme="dark"`): neutral dark tones.
+- **Architecture and design** — system design, evolvable architectures,
+  domain-driven design, patterns, trade-offs.
+- **Languages and platforms** — compilers and interpreters, virtual machines,
+  JIT compilation, memory management, concurrency.
+- **Data and integration** — data modeling, APIs and contracts, messaging, ETL,
+  consistency.
+- **Quality and operations** — testing, CI/CD, observability, performance,
+  security.
+- **Applied AI** — language models, RAG, agents, evaluation, integration with
+  systems.
 
-The theme is saved in `localStorage` (`integrala-theme`). If there is no saved preference,
-the system preference is used (`prefers-color-scheme`). A script in the `<head>` applies the theme
-before the first paint to avoid a flash. The header has a sun/moon switch for the theme and a
-round chat button with an attention animation that opens the contact app.
+Knowing how languages and systems actually work is what lets us make better
+decisions and solve problems that have no off-the-shelf answer.
 
-## Languages
+## The team
 
-The site is in **Spanish by default** (`<html lang="es">`). Spanish is written directly
-in the HTML, so it is what crawlers see without running JavaScript. English translations
-live in `data-en`, `data-en-html`, `data-en-aria-label`, and `data-en-title` attributes and
-are applied by `app.js` when English is selected. The same mechanism works on every page.
+INTEGRALA was founded by **Nahuel Palumbo**, doctor in computer science. His
+research focused on JIT compilers and virtual machines: he developed Druid, a
+metacompiler for Pharo, and contributed to the Pharo virtual machine
+(interpreter, garbage collector and compilers) and to the language itself. That
+background in performance, memory, concurrency and language design is applied
+directly to the systems we build.
 
-- A switch in the header (`ES` / `EN`, next to the theme switch) changes the language.
-- The choice is saved in `localStorage` (`integrala-lang`) and persists across pages.
-- The `?lang=en` query parameter deep-links to the English version of a page.
-- `hreflang` alternates (`es`, `en`, `x-default`) and the JSON-LD `availableLanguage`
-  list both languages for bots.
+We keep the team small on purpose. You work directly with the people who design
+and write the software — no intermediaries, senior decisions and direct
+communication.
 
-## Local preview
+## Get in touch
 
-```sh
-python3 -m http.server 8000
-# open http://localhost:8000
-```
+Tell us what you need to solve — you don't need a closed specification to reach
+out. We reply with concrete questions and tell you honestly whether we can help.
 
-You can also open `index.html` in a browser.
+- **Website:** https://palumbon.github.io/integrala-landing/
+- **Contact:** https://professional-chat-pwa.vercel.app/
 
-## Designed for bots
+---
 
-- Semantic HTML and full content in the markup (no JavaScript rendering).
-- Indexing metadata (`robots`, `googlebot`) and `canonical`.
-- schema.org structured data: `Organization`, `WebSite` and `ProfessionalService`
-  with a capability catalog on the landing; `Person` (founder) and `AboutPage` on
-  the About page.
-- Open Graph and Twitter Card with `og.png` image (1200×630).
-- `robots.txt` with an explicit list of allowed AI crawlers.
-- `sitemap.xml` and `llms.txt`.
-- `hreflang` alternates for Spanish (default), English, and `x-default`.
-
-## Before publishing
-
-1. **Domain**: metadata uses `https://palumbon.github.io/integrala-landing/`.
-   If the site is published on another domain, update `canonical`, the `og:*` and
-   `twitter:*` tags, the JSON-LD in `index.html` and `about.html`, `robots.txt`,
-   `sitemap.xml` and `llms.txt`.
-2. Review the institutional text and the founder's biography so they accurately
-   describe the team and its experience.
-3. Verify that the contact app at `https://professional-chat-pwa.vercel.app/` is available.
-4. Review legal availability of the brand and domain before publishing.
-
-## Design notes
-
-- Fonts: Fraunces (headings), Instrument Sans (body), and IBM Plex Mono (labels and
-  technical concepts), loaded from Google Fonts with system fallbacks.
-- The default theme is **Gray**; you can change it in `app.js` (`apply(...)`) if you prefer
-  to start in dark mode.
-
-## Contact
-
-The buttons and the contact section direct to the INTEGRALA contact app, where
-people can start a conversation and, when needed, continue with someone from the
-team. The site invites visitors to get in touch but does not describe or promote
-the app itself.
+<sub>This repository hosts the INTEGRALA website.</sub>
