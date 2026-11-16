@@ -2,6 +2,8 @@
 
 > INTEGRALA integrates systems, automates processes, and incorporates artificial intelligence into real operations. Professional engineering for companies with complex systems and processes.
 
+Available languages: Spanish (default) and English. The site is served as Spanish at the root URL and as English at `?lang=en` (see `hreflang` alternates in the page). This summary is written in English.
+
 INTEGRALA is a team of professionals connected to technological universities. It combines experience in engineering, research, and training new professionals to build reliable solutions for industry.
 
 ## What we solve
@@ -24,6 +26,7 @@ INTEGRALA is a team of professionals connected to technological universities. It
 - Chat (bot or team member): https://professional-chat-pwa.vercel.app/
 
 ## Links
-- [Website](https://palumbon.github.io/integrala-landing/)
+- [Website (Spanish, default)](https://palumbon.github.io/integrala-landing/)
+- [Website (English)](https://palumbon.github.io/integrala-landing/?lang=en)
 - [Sitemap](https://palumbon.github.io/integrala-landing/sitemap.xml)
 - [Structured data](https://palumbon.github.io/integrala-landing/) (schema.org: Organization, WebSite, ProfessionalService)

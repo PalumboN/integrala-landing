@@ -1,20 +1,23 @@
 <!doctype html>
-<html lang="en" data-theme="gray">
+<html lang="es" data-theme="gray" data-lang="es">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Title & description (also used by crawlers, social cards and AI agents) -->
-  <title>INTEGRALA — Systems that work together</title>
-  <meta name="description" content="INTEGRALA integrates systems, automates processes, and incorporates artificial intelligence into real operations. Professional engineering for companies with complex systems and processes.">
+  <title>INTEGRALA — Sistemas que funcionan juntos</title>
+  <meta name="description" content="INTEGRALA integra sistemas, automatiza procesos e incorpora inteligencia artificial a operaciones reales. Ingeniería profesional para empresas con sistemas y procesos complejos.">
 
   <!-- Crawlers / bots -->
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <meta name="googlebot" content="index, follow">
   <meta name="author" content="INTEGRALA">
   <link rel="canonical" href="https://palumbon.github.io/integrala-landing/">
+  <link rel="alternate" hreflang="es" href="https://palumbon.github.io/integrala-landing/">
+  <link rel="alternate" hreflang="en" href="https://palumbon.github.io/integrala-landing/?lang=en">
+  <link rel="alternate" hreflang="x-default" href="https://palumbon.github.io/integrala-landing/">
   <link rel="sitemap" type="application/xml" href="sitemap.xml">
-  <link rel="alternate" type="text/plain" href="llms.txt" title="Summary for AI agents">
+  <link rel="alternate" type="text/plain" href="llms.txt" title="Resumen para agentes de IA">
 
   <!-- Icons & PWA -->
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -28,17 +31,18 @@
   <!-- Social -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="INTEGRALA">
-  <meta property="og:locale" content="en_US">
-  <meta property="og:title" content="INTEGRALA — Systems that work together">
-  <meta property="og:description" content="We integrate systems, automate processes, and incorporate artificial intelligence into real operations.">
+  <meta property="og:locale" content="es_AR">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:title" content="INTEGRALA — Sistemas que funcionan juntos">
+  <meta property="og:description" content="Integramos sistemas, automatizamos procesos e incorporamos inteligencia artificial a operaciones reales.">
   <meta property="og:url" content="https://palumbon.github.io/integrala-landing/">
   <meta property="og:image" content="https://palumbon.github.io/integrala-landing/og.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="INTEGRALA — Systems that work together">
+  <meta property="og:image:alt" content="INTEGRALA — Sistemas que funcionan juntos">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="INTEGRALA — Systems that work together">
-  <meta name="twitter:description" content="We integrate systems, automate processes, and incorporate artificial intelligence into real operations.">
+  <meta name="twitter:title" content="INTEGRALA — Sistemas que funcionan juntos">
+  <meta name="twitter:description" content="Integramos sistemas, automatizamos procesos e incorporamos inteligencia artificial a operaciones reales.">
   <meta name="twitter:image" content="https://palumbon.github.io/integrala-landing/og.png">
 
   <!-- Fonts -->
@@ -48,7 +52,7 @@
 
   <link rel="stylesheet" href="styles.css">
 
-  <!-- Apply the saved theme before first paint to avoid a flash -->
+  <!-- Apply the saved theme and language before first paint to avoid a flash -->
   <script>
     (function () {
       try {
@@ -57,6 +61,13 @@
           t = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "gray";
         }
         document.documentElement.setAttribute("data-theme", t);
+
+        var q = new URLSearchParams(window.location.search).get("lang");
+        var l = localStorage.getItem("integrala-lang");
+        if (q !== "en" && q !== "es") l = (l === "en" || l === "es") ? l : "es";
+        else l = q;
+        document.documentElement.setAttribute("data-lang", l);
+        document.documentElement.setAttribute("lang", l);
       } catch (e) {}
     })();
   </script>
@@ -71,19 +82,19 @@
         "@id": "https://palumbon.github.io/integrala-landing/#organization",
         "name": "INTEGRALA",
         "url": "https://palumbon.github.io/integrala-landing/",
-        "description": "We integrate systems, automate processes, and incorporate artificial intelligence into real operations.",
+        "description": "Integramos sistemas, automatizamos procesos e incorporamos inteligencia artificial a operaciones reales.",
         "knowsAbout": [
-          "Systems integration",
-          "Process automation",
-          "Applied artificial intelligence",
-          "Software engineering"
+          "Integración de sistemas",
+          "Automatización de procesos",
+          "Inteligencia artificial aplicada",
+          "Ingeniería de software"
         ],
         "contactPoint": [
           {
             "@type": "ContactPoint",
             "contactType": "customer support",
             "url": "https://professional-chat-pwa.vercel.app/",
-            "availableLanguage": ["en"]
+            "availableLanguage": ["es", "en"]
           }
         ]
       },
@@ -92,7 +103,7 @@
         "@id": "https://palumbon.github.io/integrala-landing/#website",
         "url": "https://palumbon.github.io/integrala-landing/",
         "name": "INTEGRALA",
-        "inLanguage": "en",
+        "inLanguage": "es",
         "publisher": { "@id": "https://palumbon.github.io/integrala-landing/#organization" }
       },
       {
@@ -100,34 +111,34 @@
         "@id": "https://palumbon.github.io/integrala-landing/#service",
         "name": "INTEGRALA",
         "url": "https://palumbon.github.io/integrala-landing/",
-        "description": "Professional engineering for companies with complex systems and processes.",
+        "description": "Ingeniería profesional para empresas con sistemas y procesos complejos.",
         "provider": { "@id": "https://palumbon.github.io/integrala-landing/#organization" },
         "hasOfferCatalog": {
           "@type": "OfferCatalog",
-          "name": "Services",
+          "name": "Servicios",
           "itemListElement": [
             {
               "@type": "Offer",
               "itemOffered": {
                 "@type": "Service",
-                "name": "Processes + technology",
-                "description": "Process automation to reduce repetitive tasks and errors by connecting everyday work with tools."
+                "name": "Procesos + tecnología",
+                "description": "Automatización de procesos para reducir tareas repetitivas y errores conectando el trabajo cotidiano con herramientas."
               }
             },
             {
               "@type": "Offer",
               "itemOffered": {
                 "@type": "Service",
-                "name": "System + system",
-                "description": "Integration of internal and external systems so information flows between applications, services, and data."
+                "name": "Sistema + sistema",
+                "description": "Integración de sistemas internos y externos para que la información fluya entre aplicaciones, servicios y datos."
               }
             },
             {
               "@type": "Offer",
               "itemOffered": {
                 "@type": "Service",
-                "name": "AI + systems",
-                "description": "Incorporation of artificial intelligence into existing processes, with permissions, validations, and oversight."
+                "name": "IA + sistemas",
+                "description": "Incorporación de inteligencia artificial a procesos existentes, con permisos, validaciones y supervisión."
               }
             }
           ]
@@ -138,20 +149,25 @@
   </script>
 </head>
 <body>
-  <a class="skip" href="#inicio">Skip to content</a>
+  <a class="skip" href="#inicio" data-en="Skip to content">Saltar al contenido</a>
 
   <header class="site-header">
     <div class="wrap header-inner">
-      <a class="brand" href="#inicio" aria-label="INTEGRALA, home">integrala<span>.</span></a>
+      <a class="brand" href="#inicio" aria-label="INTEGRALA, inicio" data-en-aria-label="INTEGRALA, home">integrala<span>.</span></a>
 
-      <nav class="nav-links" aria-label="Main navigation">
-        <a href="#problemas">What we solve</a>
-        <a href="#servicios">Services</a>
-        <a href="#equipo">About us</a>
+      <nav class="nav-links" aria-label="Navegación principal" data-en-aria-label="Main navigation">
+        <a href="#problemas" data-en="What we solve">Qué resolvemos</a>
+        <a href="#servicios" data-en="Services">Servicios</a>
+        <a href="#equipo" data-en="About us">Nosotros</a>
       </nav>
 
       <div class="header-actions">
-        <button type="button" class="theme-switch" role="switch" aria-checked="false" aria-label="Dark theme" data-theme-toggle>
+        <div class="lang-switch" role="group" aria-label="Idioma" data-en-aria-label="Language">
+          <button type="button" data-lang-set="es" aria-pressed="true">ES</button>
+          <button type="button" data-lang-set="en" aria-pressed="false">EN</button>
+        </div>
+
+        <button type="button" class="theme-switch" role="switch" aria-checked="false" aria-label="Tema oscuro" data-en-aria-label="Dark theme" data-theme-toggle>
           <span class="ts-thumb" aria-hidden="true"></span>
           <span class="ts-icon ts-sun" aria-hidden="true">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -166,7 +182,7 @@
           </span>
         </button>
 
-        <a class="btn-chat" href="https://professional-chat-pwa.vercel.app/" aria-label="Contact us via chat" title="Contact us via chat">
+        <a class="btn-chat" href="https://professional-chat-pwa.vercel.app/" aria-label="Contactanos por chat" data-en-aria-label="Contact us via chat" title="Contactanos por chat" data-en-title="Contact us via chat">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8z"/>
           </svg>
@@ -181,27 +197,27 @@
     <section class="hero" id="inicio" aria-labelledby="hero-title">
       <div class="wrap hero-grid">
         <div class="hero-main">
-          <p class="label">Engineering <span class="sep">·</span> Integration <span class="sep">·</span> AI</p>
-          <h1 id="hero-title">Your business doesn't need more systems. It needs them to <em>work together.</em></h1>
-          <p class="hero-lede">We integrate systems, automate processes, and incorporate artificial intelligence into real operations.</p>
+          <p class="label" data-en-html="Engineering <span class='sep'>·</span> Integration <span class='sep'>·</span> AI">Ingeniería <span class="sep">·</span> Integración <span class="sep">·</span> IA</p>
+          <h1 id="hero-title" data-en-html="Your business doesn't need more systems. It needs them to <em>work together.</em>">Tu negocio no necesita más sistemas. Necesita que <em>funcionen juntos.</em></h1>
+          <p class="hero-lede" data-en="We integrate systems, automate processes, and incorporate artificial intelligence into real operations.">Integramos sistemas, automatizamos procesos e incorporamos inteligencia artificial a operaciones reales.</p>
           <div class="hero-actions">
-            <a class="btn" href="https://professional-chat-pwa.vercel.app/">Contact us via chat <span class="arrow" aria-hidden="true">↗</span></a>
-            <a class="btn btn-ghost" href="#servicios">See what we do</a>
+            <a class="btn" href="https://professional-chat-pwa.vercel.app/"><span data-en="Contact us via chat">Contactanos por chat</span> <span class="arrow" aria-hidden="true">↗</span></a>
+            <a class="btn btn-ghost" href="#servicios" data-en="See what we do">Conocé qué hacemos</a>
           </div>
-          <p class="hero-note">Professional engineering. Concrete solutions. Without changing everything that already works.</p>
+          <p class="hero-note" data-en="Professional engineering. Concrete solutions. Without changing everything that already works.">Ingeniería profesional. Soluciones concretas. Sin cambiar todo lo que ya funciona.</p>
         </div>
 
         <figure class="figure">
           <figcaption class="figure-head">
-            <span>Fig. 01 — A connected ecosystem</span>
+            <span data-en="Fig. 01 — A connected ecosystem">Fig. 01 — Un ecosistema conectado</span>
             <span class="status" aria-hidden="true"></span>
           </figcaption>
           <div class="figure-hub"><span class="dot" aria-hidden="true"></span>integrala</div>
           <ul class="bus">
-            <li class="bus-item"><span class="bus-term" aria-hidden="true"></span><span class="t">Systems</span><span class="s">ERP · CRM · APIs</span></li>
-            <li class="bus-item"><span class="bus-term" aria-hidden="true"></span><span class="t">Data</span><span class="s">Reliable information</span></li>
-            <li class="bus-item"><span class="bus-term" aria-hidden="true"></span><span class="t">Processes</span><span class="s">Fewer manual tasks</span></li>
-            <li class="bus-item"><span class="bus-term" aria-hidden="true"></span><span class="t">Artificial intelligence</span><span class="s">Automation with control</span></li>
+            <li class="bus-item"><span class="bus-term" aria-hidden="true"></span><span class="t" data-en="Systems">Sistemas</span><span class="s" data-en="ERP · CRM · APIs">ERP · CRM · APIs</span></li>
+            <li class="bus-item"><span class="bus-term" aria-hidden="true"></span><span class="t" data-en="Data">Datos</span><span class="s" data-en="Reliable information">Información confiable</span></li>
+            <li class="bus-item"><span class="bus-term" aria-hidden="true"></span><span class="t" data-en="Processes">Procesos</span><span class="s" data-en="Fewer manual tasks">Menos tareas manuales</span></li>
+            <li class="bus-item"><span class="bus-term" aria-hidden="true"></span><span class="t" data-en="Artificial intelligence">Inteligencia artificial</span><span class="s" data-en="Automation with control">Automatización con control</span></li>
           </ul>
         </figure>
       </div>
@@ -211,42 +227,42 @@
     <section class="section" id="problemas" aria-labelledby="problemas-title">
       <div class="wrap">
         <header class="sec-head">
-          <p class="label">The challenge</p>
-          <h2 id="problemas-title">Technology should simplify work, not complicate it.</h2>
-          <p class="lede">As a company grows, so does the number of tools, data, and tasks that need to be coordinated.</p>
+          <p class="label" data-en="The challenge">El desafío</p>
+          <h2 id="problemas-title" data-en="Technology should simplify work, not complicate it.">La tecnología debería simplificar el trabajo, no complicarlo.</h2>
+          <p class="lede" data-en="As a company grows, so does the number of tools, data, and tasks that need to be coordinated.">A medida que una empresa crece, también crece la cantidad de herramientas, datos y tareas que necesitan coordinarse.</p>
         </header>
 
         <ol class="spec">
           <li class="spec-row">
             <span class="spec-num">01</span>
-            <span class="spec-tag">Processes</span>
+            <span class="spec-tag" data-en="Processes">Procesos</span>
             <div class="spec-body">
-              <h3>Too much manual work</h3>
-              <p>People copying data, entering orders, or repeating tasks across tools.</p>
+              <h3 data-en="Too much manual work">Demasiado trabajo manual</h3>
+              <p data-en="People copying data, entering orders, or repeating tasks across tools.">Personas copiando datos, cargando pedidos o repitiendo tareas entre herramientas.</p>
             </div>
           </li>
           <li class="spec-row">
             <span class="spec-num">02</span>
-            <span class="spec-tag">Systems</span>
+            <span class="spec-tag" data-en="Systems">Sistemas</span>
             <div class="spec-body">
-              <h3>Disconnected information</h3>
-              <p>Applications that do not communicate, duplicated data, and fragile integrations.</p>
+              <h3 data-en="Disconnected information">Información desconectada</h3>
+              <p data-en="Applications that do not communicate, duplicated data, and fragile integrations.">Aplicaciones que no se comunican, datos duplicados e integraciones frágiles.</p>
             </div>
           </li>
           <li class="spec-row">
             <span class="spec-num">03</span>
-            <span class="spec-tag">Operations</span>
+            <span class="spec-tag" data-en="Operations">Operaciones</span>
             <div class="spec-body">
-              <h3>Stalled processes</h3>
-              <p>Spreadsheets and temporary solutions that become a critical part of operations.</p>
+              <h3 data-en="Stalled processes">Procesos que se traban</h3>
+              <p data-en="Spreadsheets and temporary solutions that become a critical part of operations.">Planillas y soluciones temporales que se vuelven parte crítica de la operación.</p>
             </div>
           </li>
           <li class="spec-row">
             <span class="spec-num">04</span>
-            <span class="spec-tag">AI</span>
+            <span class="spec-tag" data-en="AI">IA</span>
             <div class="spec-body">
-              <h3>Ideas that never reach production</h3>
-              <p>You want to incorporate AI, but you need to integrate it with your data and systems reliably.</p>
+              <h3 data-en="Ideas that never reach production">Ideas que no llegan a producción</h3>
+              <p data-en="You want to incorporate AI, but you need to integrate it with your data and systems reliably.">Querés incorporar IA, pero necesitás integrarla con tus datos y sistemas de forma confiable.</p>
             </div>
           </li>
         </ol>
@@ -257,9 +273,9 @@
     <section class="section band" id="servicios" aria-labelledby="servicios-title">
       <div class="wrap">
         <header class="sec-head">
-          <p class="label">What we do</p>
-          <h2 id="servicios-title">Three ways to integrate.</h2>
-          <p class="lede">We start from your operations and the systems you already use to design a concrete, secure, and maintainable solution.</p>
+          <p class="label" data-en="What we do">Qué hacemos</p>
+          <h2 id="servicios-title" data-en="Three ways to integrate.">Tres formas de integrar.</h2>
+          <p class="lede" data-en="We start from your operations and the systems you already use to design a concrete, secure, and maintainable solution.">Partimos de tu operación y de los sistemas que ya utilizás para diseñar una solución concreta, segura y mantenible.</p>
         </header>
 
         <div class="services">
@@ -273,9 +289,9 @@
               </svg>
               <span class="service-num">01</span>
             </div>
-            <h3>Processes + technology</h3>
-            <p>Increase the potential of your operation by connecting everyday work with tools that reduce repetitive tasks and errors.</p>
-            <p class="example"><b>For example</b>Automating the entry and validation of orders that are currently processed manually.</p>
+            <h3 data-en="Processes + technology">Procesos + tecnología</h3>
+            <p data-en="Increase the potential of your operation by connecting everyday work with tools that reduce repetitive tasks and errors.">Aumentá el potencial de tu operación conectando el trabajo cotidiano con herramientas que reduzcan tareas repetitivas y errores.</p>
+            <p class="example" data-en-html="<b>For example</b>Automating the entry and validation of orders that are currently processed manually."><b>Por ejemplo</b>Automatizar la carga y validación de pedidos que hoy se procesan manualmente.</p>
           </article>
 
           <article class="service">
@@ -289,9 +305,9 @@
               </svg>
               <span class="service-num">02</span>
             </div>
-            <h3>System + system</h3>
-            <p>Reduce friction between internal and external systems. We connect applications, services, and data so information flows.</p>
-            <p class="example"><b>For example</b>Synchronizing sales, inventory, billing, and logistics.</p>
+            <h3 data-en="System + system">Sistema + sistema</h3>
+            <p data-en="Reduce friction between internal and external systems. We connect applications, services, and data so information flows.">Reducí la fricción entre sistemas internos y externos. Conectamos aplicaciones, servicios y datos para que la información fluya.</p>
+            <p class="example" data-en-html="<b>For example</b>Synchronizing sales, inventory, billing, and logistics."><b>Por ejemplo</b>Sincronizar ventas, inventario, facturación y logística.</p>
           </article>
 
           <article class="service">
@@ -306,9 +322,9 @@
               </svg>
               <span class="service-num">03</span>
             </div>
-            <h3>AI + systems</h3>
-            <p>We incorporate artificial intelligence into existing processes, with permissions, validations, and oversight appropriate to the risk.</p>
-            <p class="example"><b>For example</b>An agent that retrieves information and prepares actions for human approval.</p>
+            <h3 data-en="AI + systems">IA + sistemas</h3>
+            <p data-en="We incorporate artificial intelligence into existing processes, with permissions, validations, and oversight appropriate to the risk.">Incorporamos inteligencia artificial a procesos existentes, con permisos, validaciones y supervisión adecuados al riesgo.</p>
+            <p class="example" data-en-html="<b>For example</b>An agent that retrieves information and prepares actions for human approval."><b>Por ejemplo</b>Un agente que consulta información y prepara acciones para aprobación humana.</p>
           </article>
         </div>
       </div>
@@ -318,32 +334,32 @@
     <section class="section" id="equipo" aria-labelledby="equipo-title">
       <div class="wrap approach-grid">
         <div class="approach-intro">
-          <p class="label">Why INTEGRALA</p>
-          <h2 id="equipo-title">Engineering that connects two worlds.</h2>
-          <p class="lede">We are a team of professionals connected to technological universities. We combine experience in engineering, research, and training new professionals to build reliable solutions for industry.</p>
-          <a class="text-link" href="https://professional-chat-pwa.vercel.app/">Let's talk about your challenge <span aria-hidden="true">↗</span></a>
+          <p class="label" data-en="Why INTEGRALA">Por qué INTEGRALA</p>
+          <h2 id="equipo-title" data-en="Engineering that connects two worlds.">Ingeniería que conecta dos mundos.</h2>
+          <p class="lede" data-en="We are a team of professionals connected to technological universities. We combine experience in engineering, research, and training new professionals to build reliable solutions for industry.">Somos un equipo de profesionales vinculados con universidades tecnológicas. Combinamos experiencia en ingeniería, investigación y formación de nuevos profesionales para construir soluciones confiables para la industria.</p>
+          <a class="text-link" href="https://professional-chat-pwa.vercel.app/"><span data-en="Let's talk about your challenge">Conversemos sobre tu desafío</span> <span aria-hidden="true">↗</span></a>
         </div>
 
         <ol class="principles">
           <li class="principle">
             <span class="n">01</span>
             <div>
-              <h3>We understand before we build</h3>
-              <p>We start with the process, the problem, and the outcome you need; then we choose the technology.</p>
+              <h3 data-en="We understand before we build">Entendemos antes de construir</h3>
+              <p data-en="We start with the process, the problem, and the outcome you need; then we choose the technology.">Empezamos por el proceso, el problema y el resultado que necesitás; después elegimos la tecnología.</p>
             </div>
           </li>
           <li class="principle">
             <span class="n">02</span>
             <div>
-              <h3>Rigorous engineering</h3>
-              <p>We design solutions that can be tested, maintained, and evolved, with attention to quality and security.</p>
+              <h3 data-en="Rigorous engineering">Ingeniería rigurosa</h3>
+              <p data-en="We design solutions that can be tested, maintained, and evolved, with attention to quality and security.">Diseñamos soluciones que se pueden probar, mantener y evolucionar, con atención a la calidad y la seguridad.</p>
             </div>
           </li>
           <li class="principle">
             <span class="n">03</span>
             <div>
-              <h3>Shared experience</h3>
-              <p>We promote knowledge transfer between university and industry and the training of new professionals through real projects and supervised work.</p>
+              <h3 data-en="Shared experience">Experiencia que se comparte</h3>
+              <p data-en="We promote knowledge transfer between university and industry and the training of new professionals through real projects and supervised work.">Promovemos la transferencia entre universidad e industria y la formación de nuevos profesionales a través de proyectos reales y trabajo supervisado.</p>
             </div>
           </li>
         </ol>
@@ -353,10 +369,10 @@
     <!-- Contact -->
     <section class="section band" id="contacto" aria-labelledby="contacto-title">
       <div class="wrap cta">
-        <p class="label">Let's talk</p>
-        <h2 id="contacto-title">What would you like to work better?</h2>
-        <p class="lede">Contact us via chat: start by talking with our bot and, if needed, continue with someone from the team.</p>
-        <a class="btn" href="https://professional-chat-pwa.vercel.app/">Start chat <span class="arrow" aria-hidden="true">↗</span></a>
+        <p class="label" data-en="Let's talk">Hablemos</p>
+        <h2 id="contacto-title" data-en="What would you like to work better?">¿Qué te gustaría que funcionara mejor?</h2>
+        <p class="lede" data-en="Contact us via chat: start by talking with our bot and, if needed, continue with someone from the team.">Contactanos por chat: empezá conversando con nuestro bot y, si necesitás, continuá con una persona del equipo.</p>
+        <a class="btn" href="https://professional-chat-pwa.vercel.app/"><span data-en="Start chat">Iniciar chat</span> <span class="arrow" aria-hidden="true">↗</span></a>
       </div>
     </section>
   </main>
@@ -364,11 +380,11 @@
   <footer class="site-footer">
     <div class="wrap footer-grid">
       <a class="footer-brand" href="#inicio">integrala.</a>
-      <p class="footer-tag">Engineering to connect systems and processes.</p>
+      <p class="footer-tag" data-en="Engineering to connect systems and processes.">Ingeniería para conectar sistemas y procesos.</p>
       <p class="footer-legal">© <span id="year">2026</span> INTEGRALA</p>
     </div>
   </footer>
 
-  <script src="app.js" defer></script>
+  <script src="app.js"></script>
 </body>
 </html>

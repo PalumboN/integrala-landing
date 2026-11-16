@@ -10,7 +10,7 @@ It can be opened directly in a browser or published on any static hosting
 | --- | --- |
 | `index.html` | Full page. All content is in the HTML (visible without JavaScript). |
 | `styles.css` | Styles and both themes. |
-| `app.js` | Progressive enhancement: theme switcher and footer year. |
+| `app.js` | Progressive enhancement: theme switcher, language switcher, and footer year. |
 | `robots.txt` | Crawling rules. Allows search engines and AI agents. |
 | `sitemap.xml` | Site map (one URL). |
 | `llms.txt` | Plain-text summary for AI assistants/agents. |
@@ -30,6 +30,19 @@ the system preference is used (`prefers-color-scheme`). A script in the `<head>`
 before the first paint to avoid a flash. The header has a sun/moon switch for the theme and a
 round chat button with an attention animation that opens the chat.
 
+## Languages
+
+The site is in **Spanish by default** (`<html lang="es">`). Spanish is written directly
+in the HTML, so it is what crawlers see without running JavaScript. English translations
+live in `data-en`, `data-en-html`, `data-en-aria-label`, and `data-en-title` attributes and
+are applied by `app.js` when English is selected.
+
+- A switch in the header (`ES` / `EN`, next to the theme switch) changes the language.
+- The choice is saved in `localStorage` (`integrala-lang`).
+- The `?lang=en` query parameter deep-links to the English version.
+- `hreflang` alternates (`es`, `en`, `x-default`) and the JSON-LD `availableLanguage`
+  list both languages for bots.
+
 ## Local preview
 
 ```sh
@@ -48,6 +61,7 @@ You can also open `index.html` in a browser.
 - Open Graph and Twitter Card with `og.png` image (1200×630).
 - `robots.txt` with an explicit list of allowed AI crawlers.
 - `sitemap.xml` and `llms.txt`.
+- `hreflang` alternates for Spanish (default), English, and `x-default`.
 
 ## Before publishing
 
