@@ -1,0 +1,29 @@
+# INTEGRALA
+
+> INTEGRALA integrates systems, automates processes, and incorporates artificial intelligence into real operations. Professional engineering for companies with complex systems and processes.
+
+INTEGRALA is a team of professionals connected to technological universities. It combines experience in engineering, research, and training new professionals to build reliable solutions for industry.
+
+## What we solve
+- Too much manual work: people copying data, entering orders, or repeating tasks across tools.
+- Disconnected information: applications that do not communicate, duplicated data, and fragile integrations.
+- Stalled processes: spreadsheets and temporary solutions that become a critical part of operations.
+- Ideas that never reach production: incorporating AI integrated with data and systems in a reliable way.
+
+## Services
+- Processes + technology: automation of everyday work to reduce repetitive tasks and errors. Example: entering and validating orders that are currently processed manually.
+- System + system: integration of internal and external systems so information flows. Example: synchronizing sales, inventory, billing, and logistics.
+- AI + systems: artificial intelligence incorporated into existing processes, with permissions, validations, and oversight appropriate to the risk. Example: an agent that retrieves information and prepares actions for human approval.
+
+## Working principles
+- We understand before we build: first the process, the problem, and the outcome; then the technology.
+- Rigorous engineering: solutions that can be tested, maintained, and evolved, with attention to quality and security.
+- Shared experience: knowledge transfer between university and industry and training of new professionals on real projects.
+
+## Contact
+- Chat (bot or team member): https://professional-chat-pwa.vercel.app/
+
+## Links
+- [Website](https://palumbon.github.io/integrala-landing/)
+- [Sitemap](https://palumbon.github.io/integrala-landing/sitemap.xml)
+- [Structured data](https://palumbon.github.io/integrala-landing/) (schema.org: Organization, WebSite, ProfessionalService)

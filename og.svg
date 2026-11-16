@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="INTEGRALA — Sistemas que funcionan juntos">
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#ffffff" stroke-opacity="0.045" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="630" fill="#101113"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+
+  <!-- schematic motif -->
+  <g fill="none" stroke="#33373d" stroke-width="2">
+    <path d="M860 170 H950 V265"/>
+    <path d="M1040 170 H950"/>
+    <path d="M860 430 H950 V321"/>
+    <path d="M1040 430 H950"/>
+  </g>
+  <g fill="#101113" stroke="#3a3e44" stroke-width="2">
+    <rect x="846" y="156" width="28" height="28"/>
+    <rect x="1026" y="156" width="28" height="28"/>
+    <rect x="846" y="416" width="28" height="28"/>
+    <rect x="1026" y="416" width="28" height="28"/>
+  </g>
+  <g fill="#f0723f">
+    <rect x="855" y="165" width="10" height="10"/>
+    <rect x="1035" y="165" width="10" height="10"/>
+    <rect x="855" y="425" width="10" height="10"/>
+    <rect x="1035" y="425" width="10" height="10"/>
+  </g>
+  <rect x="922" y="265" width="56" height="56" fill="#16171a" stroke="#f0723f" stroke-width="2"/>
+  <rect x="943" y="286" width="14" height="14" fill="#f0723f"/>
+
+  <!-- text -->
+  <text x="88" y="152" font-family="Menlo, Consolas, monospace" font-size="20" letter-spacing="4" fill="#f0723f">INGENIERÍA · INTEGRACIÓN · IA</text>
+
+  <text x="86" y="288" font-family="Georgia, 'Times New Roman', serif" font-size="82" fill="#f2f2ef">Sistemas que</text>
+  <text x="86" y="374" font-family="Georgia, 'Times New Roman', serif" font-size="82" fill="#f2f2ef">funcionan juntos.</text>
+
+  <text x="88" y="452" font-family="Helvetica, Arial, sans-serif" font-size="25" fill="#a4a7ab">Integramos sistemas, automatizamos procesos e</text>
+  <text x="88" y="486" font-family="Helvetica, Arial, sans-serif" font-size="25" fill="#a4a7ab">incorporamos inteligencia artificial a operaciones reales.</text>
+
+  <text x="86" y="572" font-family="Georgia, 'Times New Roman', serif" font-size="36" fill="#f2f2ef">integrala<tspan fill="#f0723f">.</tspan></text>
+  <text x="1140" y="570" text-anchor="end" font-family="Menlo, Consolas, monospace" font-size="16" letter-spacing="1" fill="#6e7276">palumbon.github.io/integrala-landing</text>
+</svg>
