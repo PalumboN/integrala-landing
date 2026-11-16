@@ -219,18 +219,171 @@
           <p class="hero-note" data-en="Software engineering boutique. Small team, senior work, direct communication.">Boutique de ingeniería de software. Equipo pequeño, trabajo senior, comunicación directa.</p>
         </div>
 
-        <figure class="figure">
-          <figcaption class="figure-head">
-            <span data-en="Fig. 01 — A system built to evolve">Fig. 01 — Un sistema pensado para evolucionar</span>
+        <figure class="figure ecosystem" id="ecosystem" aria-label="Visualización interactiva de un ecosistema conectado" data-en-aria-label="Interactive connected ecosystem visualization">
+          <figcaption class="figure-head eco-head-info">
+            <div class="eco-info" aria-live="polite">
+              <p class="eco-info-kicker" data-en="Scenario">Escenario</p>
+              <p class="eco-info-title" id="eco-info-title" data-en="Disconnected">Desconectado</p>
+              <p class="eco-info-text" id="eco-info-text" data-en="Systems, data, processes and AI exist, but each one operates in isolation.">Sistemas, datos, procesos e IA existen, pero cada uno opera aislado.</p>
+            </div>
             <span class="status" aria-hidden="true"></span>
           </figcaption>
-          <div class="figure-hub"><span class="dot" aria-hidden="true"></span>integrala</div>
-          <ul class="bus">
-            <li class="bus-item"><span class="bus-term" aria-hidden="true"></span><span class="t" data-en="Domain">Dominio</span><span class="s" data-en="Business rules">Reglas de negocio</span></li>
-            <li class="bus-item"><span class="bus-term" aria-hidden="true"></span><span class="t" data-en="Interfaces">Interfaces</span><span class="s" data-en="APIs and contracts">APIs y contratos</span></li>
-            <li class="bus-item"><span class="bus-term" aria-hidden="true"></span><span class="t" data-en="Data">Datos</span><span class="s" data-en="Consistency">Consistencia</span></li>
-            <li class="bus-item"><span class="bus-term" aria-hidden="true"></span><span class="t" data-en="Platform">Plataforma</span><span class="s" data-en="Deploy and operations">Despliegue y operación</span></li>
-          </ul>
+
+          <div class="eco-controls" role="group" aria-label="Escenarios" data-en-aria-label="Scenarios">
+            <button type="button" class="eco-scenario is-active" data-scenario="disconnected" aria-pressed="true">
+              <span data-en="Disconnected">Desconectado</span>
+            </button>
+            <button type="button" class="eco-scenario" data-scenario="connected" aria-pressed="false">
+              <span data-en="Connected">Conectado</span>
+            </button>
+            <button type="button" class="eco-scenario" data-scenario="evolving" aria-pressed="false">
+              <span data-en="Evolving">Evolucionando</span>
+            </button>
+          </div>
+
+          <div class="eco-stage" data-scenario="disconnected">
+            <svg class="eco-svg" viewBox="0 0 320 320" role="img" aria-labelledby="eco-title eco-desc">
+              <title id="eco-title" data-en="Interactive system map around INTEGRALA">Mapa interactivo de sistema alrededor de INTEGRALA</title>
+              <desc id="eco-desc" data-en="Nodes for Systems, Data, Processes and AI connected to a central core. Scenarios show disconnected, connected and evolving states.">Nodos de Sistemas, Datos, Procesos e IA conectados a un núcleo central. Los escenarios muestran estados desconectado, conectado y en evolución.</desc>
+              <defs>
+                <filter id="eco-glow" x="-50%" y="-50%" width="200%" height="200%">
+                  <feGaussianBlur stdDeviation="1.8" result="blur" />
+                  <feMerge>
+                    <feMergeNode in="blur" />
+                    <feMergeNode in="SourceGraphic" />
+                  </feMerge>
+                </filter>
+              </defs>
+              <g class="eco-links" aria-hidden="true">
+                <path class="eco-link" data-link="systems" d="M160 160 L160 52" />
+                <path class="eco-link" data-link="data" d="M160 160 L268 160" />
+                <path class="eco-link" data-link="processes" d="M160 160 L160 268" />
+                <path class="eco-link" data-link="ai" d="M160 160 L52 160" />
+                <path class="eco-link eco-link--ring" data-link="ring" d="M160 52 L268 160 L160 268 L52 160 Z" />
+                <path class="eco-link eco-link--unexpected" data-link="unexpected" d="M160 52 Q228 92 268 160" />
+                <path class="eco-link eco-link--unexpected" data-link="unexpected" d="M268 160 Q228 228 160 268" />
+                <path class="eco-link eco-link--unexpected" data-link="unexpected" d="M160 268 Q92 228 52 160" />
+                <path class="eco-link eco-link--unexpected" data-link="unexpected" d="M52 160 Q92 92 160 52" />
+                <path class="eco-link eco-link--unexpected" data-link="unexpected" d="M160 52 Q210 160 160 268" />
+                <path class="eco-link eco-link--unexpected" data-link="unexpected" d="M52 160 Q160 210 268 160" />
+                <path class="eco-link eco-link--evolve eco-link--escape" data-link="escape" d="M160 52 L160 6" />
+                <path class="eco-link eco-link--evolve eco-link--escape" data-link="escape" d="M268 160 L314 160" />
+                <path class="eco-link eco-link--evolve eco-link--escape" data-link="escape" d="M160 268 L160 314" />
+                <path class="eco-link eco-link--evolve eco-link--escape" data-link="escape" d="M52 160 L6 160" />
+                <path class="eco-link eco-link--evolve eco-link--escape" data-link="escape" d="M160 52 Q118 18 78 8" />
+                <path class="eco-link eco-link--evolve eco-link--escape" data-link="escape" d="M268 160 Q302 118 312 78" />
+              </g>
+              <g class="eco-flows" aria-hidden="true">
+                <circle class="eco-flow" data-flow="systems" r="2.6" filter="url(#eco-glow)"><animateMotion dur="3.2s" repeatCount="indefinite" path="M160 160 L160 52" /></circle>
+                <circle class="eco-flow eco-flow--alt" data-flow="systems" r="2" filter="url(#eco-glow)"><animateMotion dur="3.2s" begin="1.6s" repeatCount="indefinite" path="M160 52 L160 160" /></circle>
+                <circle class="eco-flow" data-flow="systems" r="1.8"><animateMotion dur="4.6s" begin="0.8s" repeatCount="indefinite" path="M160 160 L160 52" /></circle>
+
+                <circle class="eco-flow" data-flow="data" r="2.6" filter="url(#eco-glow)"><animateMotion dur="3.5s" repeatCount="indefinite" path="M160 160 L268 160" /></circle>
+                <circle class="eco-flow eco-flow--alt" data-flow="data" r="2" filter="url(#eco-glow)"><animateMotion dur="3.5s" begin="1.75s" repeatCount="indefinite" path="M268 160 L160 160" /></circle>
+                <circle class="eco-flow" data-flow="data" r="1.8"><animateMotion dur="4.8s" begin="1s" repeatCount="indefinite" path="M160 160 L268 160" /></circle>
+
+                <circle class="eco-flow" data-flow="processes" r="2.6" filter="url(#eco-glow)"><animateMotion dur="3.4s" repeatCount="indefinite" path="M160 160 L160 268" /></circle>
+                <circle class="eco-flow eco-flow--alt" data-flow="processes" r="2" filter="url(#eco-glow)"><animateMotion dur="3.4s" begin="1.7s" repeatCount="indefinite" path="M160 268 L160 160" /></circle>
+                <circle class="eco-flow" data-flow="processes" r="1.8"><animateMotion dur="4.7s" begin="0.9s" repeatCount="indefinite" path="M160 160 L160 268" /></circle>
+
+                <circle class="eco-flow" data-flow="ai" r="2.6" filter="url(#eco-glow)"><animateMotion dur="3.1s" repeatCount="indefinite" path="M160 160 L52 160" /></circle>
+                <circle class="eco-flow eco-flow--alt" data-flow="ai" r="2" filter="url(#eco-glow)"><animateMotion dur="3.1s" begin="1.55s" repeatCount="indefinite" path="M52 160 L160 160" /></circle>
+                <circle class="eco-flow" data-flow="ai" r="1.8"><animateMotion dur="4.4s" begin="0.7s" repeatCount="indefinite" path="M160 160 L52 160" /></circle>
+
+                <circle class="eco-flow eco-flow--ring" data-flow="ring" r="2.2" filter="url(#eco-glow)"><animateMotion dur="7s" repeatCount="indefinite" path="M160 52 L268 160 L160 268 L52 160 Z" /></circle>
+                <circle class="eco-flow eco-flow--ring eco-flow--alt" data-flow="ring" r="1.8"><animateMotion dur="7s" begin="3.5s" repeatCount="indefinite" path="M160 52 L52 160 L160 268 L268 160 Z" /></circle>
+
+                <!-- Evolving: extra flow density -->
+                <circle class="eco-flow eco-flow--evolve" data-flow="systems" r="1.7" filter="url(#eco-glow)"><animateMotion dur="2.1s" begin="0.3s" repeatCount="indefinite" path="M160 52 L160 160" /></circle>
+                <circle class="eco-flow eco-flow--evolve" data-flow="systems" r="1.5"><animateMotion dur="2.6s" begin="1.1s" repeatCount="indefinite" path="M160 160 L160 52" /></circle>
+                <circle class="eco-flow eco-flow--evolve" data-flow="data" r="1.7" filter="url(#eco-glow)"><animateMotion dur="2.2s" begin="0.5s" repeatCount="indefinite" path="M268 160 L160 160" /></circle>
+                <circle class="eco-flow eco-flow--evolve" data-flow="data" r="1.5"><animateMotion dur="2.7s" begin="1.3s" repeatCount="indefinite" path="M160 160 L268 160" /></circle>
+                <circle class="eco-flow eco-flow--evolve" data-flow="processes" r="1.7" filter="url(#eco-glow)"><animateMotion dur="2s" begin="0.4s" repeatCount="indefinite" path="M160 268 L160 160" /></circle>
+                <circle class="eco-flow eco-flow--evolve" data-flow="processes" r="1.5"><animateMotion dur="2.5s" begin="1.2s" repeatCount="indefinite" path="M160 160 L160 268" /></circle>
+                <circle class="eco-flow eco-flow--evolve" data-flow="ai" r="1.7" filter="url(#eco-glow)"><animateMotion dur="2.15s" begin="0.2s" repeatCount="indefinite" path="M52 160 L160 160" /></circle>
+                <circle class="eco-flow eco-flow--evolve" data-flow="ai" r="1.5"><animateMotion dur="2.55s" begin="1s" repeatCount="indefinite" path="M160 160 L52 160" /></circle>
+                <circle class="eco-flow eco-flow--evolve eco-flow--ring" data-flow="ring" r="1.6" filter="url(#eco-glow)"><animateMotion dur="4.2s" begin="0.6s" repeatCount="indefinite" path="M160 52 L268 160 L160 268 L52 160 Z" /></circle>
+                <circle class="eco-flow eco-flow--evolve eco-flow--ring" data-flow="ring" r="1.4"><animateMotion dur="4.8s" begin="2.1s" repeatCount="indefinite" path="M160 52 L52 160 L160 268 L268 160 Z" /></circle>
+
+                <!-- Evolving: unexpected connection flows -->
+                <circle class="eco-flow eco-flow--evolve eco-flow--unexpected" data-flow="unexpected" r="2" filter="url(#eco-glow)"><animateMotion dur="2.8s" repeatCount="indefinite" path="M160 52 Q228 92 268 160" /></circle>
+                <circle class="eco-flow eco-flow--evolve eco-flow--unexpected eco-flow--alt" data-flow="unexpected" r="1.6"><animateMotion dur="3.1s" begin="1.4s" repeatCount="indefinite" path="M268 160 Q228 92 160 52" /></circle>
+                <circle class="eco-flow eco-flow--evolve eco-flow--unexpected" data-flow="unexpected" r="2" filter="url(#eco-glow)"><animateMotion dur="2.9s" begin="0.5s" repeatCount="indefinite" path="M268 160 Q228 228 160 268" /></circle>
+                <circle class="eco-flow eco-flow--evolve eco-flow--unexpected eco-flow--alt" data-flow="unexpected" r="1.6"><animateMotion dur="3.2s" begin="1.9s" repeatCount="indefinite" path="M160 268 Q228 228 268 160" /></circle>
+                <circle class="eco-flow eco-flow--evolve eco-flow--unexpected" data-flow="unexpected" r="2" filter="url(#eco-glow)"><animateMotion dur="2.7s" begin="0.9s" repeatCount="indefinite" path="M160 268 Q92 228 52 160" /></circle>
+                <circle class="eco-flow eco-flow--evolve eco-flow--unexpected eco-flow--alt" data-flow="unexpected" r="1.6"><animateMotion dur="3s" begin="2.2s" repeatCount="indefinite" path="M52 160 Q92 228 160 268" /></circle>
+                <circle class="eco-flow eco-flow--evolve eco-flow--unexpected" data-flow="unexpected" r="2" filter="url(#eco-glow)"><animateMotion dur="3s" begin="0.3s" repeatCount="indefinite" path="M52 160 Q92 92 160 52" /></circle>
+                <circle class="eco-flow eco-flow--evolve eco-flow--unexpected eco-flow--alt" data-flow="unexpected" r="1.6"><animateMotion dur="3.3s" begin="1.7s" repeatCount="indefinite" path="M160 52 Q92 92 52 160" /></circle>
+                <circle class="eco-flow eco-flow--evolve eco-flow--unexpected" data-flow="unexpected" r="1.8" filter="url(#eco-glow)"><animateMotion dur="3.6s" begin="0.7s" repeatCount="indefinite" path="M160 52 Q210 160 160 268" /></circle>
+                <circle class="eco-flow eco-flow--evolve eco-flow--unexpected eco-flow--alt" data-flow="unexpected" r="1.5"><animateMotion dur="3.6s" begin="2.5s" repeatCount="indefinite" path="M160 268 Q210 160 160 52" /></circle>
+                <circle class="eco-flow eco-flow--evolve eco-flow--unexpected" data-flow="unexpected" r="1.8" filter="url(#eco-glow)"><animateMotion dur="3.5s" begin="1.1s" repeatCount="indefinite" path="M52 160 Q160 210 268 160" /></circle>
+                <circle class="eco-flow eco-flow--evolve eco-flow--unexpected eco-flow--alt" data-flow="unexpected" r="1.5"><animateMotion dur="3.5s" begin="2.8s" repeatCount="indefinite" path="M268 160 Q160 210 52 160" /></circle>
+
+                <!-- Evolving: data escaping the diagram -->
+                <circle class="eco-flow eco-flow--evolve eco-flow--escape" data-flow="escape" r="2" filter="url(#eco-glow)"><animateMotion dur="2.4s" repeatCount="indefinite" path="M160 52 L160 -18" /></circle>
+                <circle class="eco-flow eco-flow--evolve eco-flow--escape eco-flow--alt" data-flow="escape" r="1.5"><animateMotion dur="2.8s" begin="1.2s" repeatCount="indefinite" path="M160 52 L160 -18" /></circle>
+                <circle class="eco-flow eco-flow--evolve eco-flow--escape" data-flow="escape" r="2" filter="url(#eco-glow)"><animateMotion dur="2.5s" begin="0.4s" repeatCount="indefinite" path="M268 160 L338 160" /></circle>
+                <circle class="eco-flow eco-flow--evolve eco-flow--escape eco-flow--alt" data-flow="escape" r="1.5"><animateMotion dur="2.9s" begin="1.6s" repeatCount="indefinite" path="M268 160 L338 160" /></circle>
+                <circle class="eco-flow eco-flow--evolve eco-flow--escape" data-flow="escape" r="2" filter="url(#eco-glow)"><animateMotion dur="2.6s" begin="0.8s" repeatCount="indefinite" path="M160 268 L160 338" /></circle>
+                <circle class="eco-flow eco-flow--evolve eco-flow--escape eco-flow--alt" data-flow="escape" r="1.5"><animateMotion dur="3s" begin="2s" repeatCount="indefinite" path="M160 268 L160 338" /></circle>
+                <circle class="eco-flow eco-flow--evolve eco-flow--escape" data-flow="escape" r="2" filter="url(#eco-glow)"><animateMotion dur="2.45s" begin="0.2s" repeatCount="indefinite" path="M52 160 L-18 160" /></circle>
+                <circle class="eco-flow eco-flow--evolve eco-flow--escape eco-flow--alt" data-flow="escape" r="1.5"><animateMotion dur="2.85s" begin="1.4s" repeatCount="indefinite" path="M52 160 L-18 160" /></circle>
+                <circle class="eco-flow eco-flow--evolve eco-flow--escape" data-flow="escape" r="1.7" filter="url(#eco-glow)"><animateMotion dur="3.2s" begin="0.6s" repeatCount="indefinite" path="M160 52 Q118 18 40 -20" /></circle>
+                <circle class="eco-flow eco-flow--evolve eco-flow--escape" data-flow="escape" r="1.7" filter="url(#eco-glow)"><animateMotion dur="3.3s" begin="1.8s" repeatCount="indefinite" path="M268 160 Q302 118 350 40" /></circle>
+              </g>
+              <g class="eco-node eco-core" data-node="core" tabindex="0" role="button" aria-pressed="false">
+                <circle cx="160" cy="160" r="34" class="eco-core-ring" />
+                <circle cx="160" cy="160" r="4" class="eco-core-dot" />
+                <text x="160" y="164" text-anchor="middle" class="eco-core-text">integrala</text>
+              </g>
+              <g class="eco-nodes">
+                <g class="eco-node" data-node="systems" tabindex="0" role="button" aria-pressed="false" transform="translate(160,52)">
+                  <circle class="eco-bubble" r="24" />
+                  <circle class="eco-node-base" r="18" />
+                  <g class="eco-split" aria-hidden="true">
+                    <g class="eco-spin">
+                      <circle class="eco-part" cx="-7" cy="0" r="4.2" />
+                      <circle class="eco-part" cx="7" cy="0" r="4.2" />
+                    </g>
+                  </g>
+                  <text class="eco-label" y="4" text-anchor="middle" data-en="Systems">Sistemas</text>
+                </g>
+                <g class="eco-node" data-node="data" tabindex="0" role="button" aria-pressed="false" transform="translate(268,160)">
+                  <circle class="eco-bubble" r="24" />
+                  <circle class="eco-node-base" r="18" />
+                  <g class="eco-split" aria-hidden="true">
+                    <g class="eco-spin">
+                      <circle class="eco-part" cx="-7" cy="0" r="4.2" />
+                      <circle class="eco-part" cx="7" cy="0" r="4.2" />
+                    </g>
+                  </g>
+                  <text class="eco-label" y="4" text-anchor="middle" data-en="Data">Datos</text>
+                </g>
+                <g class="eco-node" data-node="processes" tabindex="0" role="button" aria-pressed="false" transform="translate(160,268)">
+                  <circle class="eco-bubble" r="24" />
+                  <circle class="eco-node-base" r="18" />
+                  <g class="eco-split" aria-hidden="true">
+                    <g class="eco-spin">
+                      <circle class="eco-part" cx="-7" cy="0" r="4.2" />
+                      <circle class="eco-part" cx="7" cy="0" r="4.2" />
+                    </g>
+                  </g>
+                  <text class="eco-label" y="4" text-anchor="middle" data-en="Processes">Procesos</text>
+                </g>
+                <g class="eco-node" data-node="ai" tabindex="0" role="button" aria-pressed="false" transform="translate(52,160)">
+                  <circle class="eco-bubble" r="24" />
+                  <circle class="eco-node-base" r="18" />
+                  <g class="eco-split" aria-hidden="true">
+                    <g class="eco-spin">
+                      <circle class="eco-part" cx="-7" cy="0" r="4.2" />
+                      <circle class="eco-part" cx="7" cy="0" r="4.2" />
+                    </g>
+                  </g>
+                  <text class="eco-label" y="4" text-anchor="middle">IA</text>
+                </g>
+              </g>
+            </svg>
+          </div>
         </figure>
       </div>
     </section>
