@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="INTEGRALA — Sistemas que funcionan juntos">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="INTEGRALA — Ingeniería de software para sistemas que evolucionan">
   <defs>
     <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
       <path d="M40 0H0V40" fill="none" stroke="#ffffff" stroke-opacity="0.045" stroke-width="1"/>
@@ -31,14 +31,15 @@
   <rect x="943" y="286" width="14" height="14" fill="#f0723f"/>
 
   <!-- text -->
-  <text x="88" y="152" font-family="Menlo, Consolas, monospace" font-size="20" letter-spacing="4" fill="#f0723f">INGENIERÍA · INTEGRACIÓN · IA</text>
+  <text x="88" y="150" font-family="Menlo, Consolas, monospace" font-size="20" letter-spacing="4" fill="#f0723f">INGENIERÍA DE SOFTWARE · INTEGRACIÓN · IA</text>
 
-  <text x="86" y="288" font-family="Georgia, 'Times New Roman', serif" font-size="82" fill="#f2f2ef">Sistemas que</text>
-  <text x="86" y="374" font-family="Georgia, 'Times New Roman', serif" font-size="82" fill="#f2f2ef">funcionan juntos.</text>
+  <text x="86" y="268" font-family="Georgia, 'Times New Roman', serif" font-size="74" fill="#f2f2ef">Ingeniería de software</text>
+  <text x="86" y="342" font-family="Georgia, 'Times New Roman', serif" font-size="74" fill="#f2f2ef">para construir sistemas</text>
+  <text x="86" y="416" font-family="Georgia, 'Times New Roman', serif" font-size="74" fill="#f2f2ef">que evolucionan.</text>
 
-  <text x="88" y="452" font-family="Helvetica, Arial, sans-serif" font-size="25" fill="#a4a7ab">Integramos sistemas, automatizamos procesos e</text>
-  <text x="88" y="486" font-family="Helvetica, Arial, sans-serif" font-size="25" fill="#a4a7ab">incorporamos inteligencia artificial a operaciones reales.</text>
+  <text x="88" y="482" font-family="Helvetica, Arial, sans-serif" font-size="25" fill="#a4a7ab">Diseñamos, construimos, integramos y hacemos evolucionar</text>
+  <text x="88" y="514" font-family="Helvetica, Arial, sans-serif" font-size="25" fill="#a4a7ab">sistemas efectivos, mantenibles y preparados para el cambio.</text>
 
-  <text x="86" y="572" font-family="Georgia, 'Times New Roman', serif" font-size="36" fill="#f2f2ef">integrala<tspan fill="#f0723f">.</tspan></text>
-  <text x="1140" y="570" text-anchor="end" font-family="Menlo, Consolas, monospace" font-size="16" letter-spacing="1" fill="#6e7276">palumbon.github.io/integrala-landing</text>
+  <text x="86" y="584" font-family="Georgia, 'Times New Roman', serif" font-size="36" fill="#f2f2ef">integrala<tspan fill="#f0723f">.</tspan></text>
+  <text x="1140" y="582" text-anchor="end" font-family="Menlo, Consolas, monospace" font-size="16" letter-spacing="1" fill="#6e7276">palumbon.github.io/integrala-landing</text>
 </svg>

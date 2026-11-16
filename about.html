@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="es" data-theme="gray" data-lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Title & description (also used by crawlers, social cards and AI agents) -->
+  <title>INTEGRALA — Nosotros</title>
+  <meta name="description" content="INTEGRALA es una boutique de ingeniería de software. Conocé el origen y la experiencia técnica detrás del equipo, desde la investigación en compiladores JIT y máquinas virtuales hasta el software de producción.">
+
+  <!-- Crawlers / bots -->
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="googlebot" content="index, follow">
+  <meta name="author" content="INTEGRALA">
+  <link rel="canonical" href="https://palumbon.github.io/integrala-landing/about.html">
+  <link rel="alternate" hreflang="es" href="https://palumbon.github.io/integrala-landing/about.html">
+  <link rel="alternate" hreflang="en" href="https://palumbon.github.io/integrala-landing/about.html?lang=en">
+  <link rel="alternate" hreflang="x-default" href="https://palumbon.github.io/integrala-landing/about.html">
+  <link rel="sitemap" type="application/xml" href="sitemap.xml">
+  <link rel="alternate" type="text/plain" href="llms.txt" title="Resumen para agentes de IA">
+
+  <!-- Icons & PWA -->
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="alternate icon" href="favicon.ico" sizes="16x16 32x32 48x48">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#f1f1ef" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#101113" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#f1f1ef">
+
+  <!-- Social -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="INTEGRALA">
+  <meta property="og:locale" content="es_AR">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:title" content="INTEGRALA — Nosotros">
+  <meta property="og:description" content="Boutique de ingeniería de software con raíces en la investigación: compiladores JIT, máquinas virtuales e ingeniería aplicada.">
+  <meta property="og:url" content="https://palumbon.github.io/integrala-landing/about.html">
+  <meta property="og:image" content="https://palumbon.github.io/integrala-landing/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="INTEGRALA — Nosotros">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="INTEGRALA — Nosotros">
+  <meta name="twitter:description" content="Boutique de ingeniería de software con raíces en la investigación: compiladores JIT, máquinas virtuales e ingeniería aplicada.">
+  <meta name="twitter:image" content="https://palumbon.github.io/integrala-landing/og.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..600;1,9..144,400..600&family=IBM+Plex+Mono:wght@400;500&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Apply the saved theme and language before first paint to avoid a flash -->
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem("integrala-theme");
+        if (t !== "dark" && t !== "gray") {
+          t = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "gray";
+        }
+        document.documentElement.setAttribute("data-theme", t);
+
+        var q = new URLSearchParams(window.location.search).get("lang");
+        var l = localStorage.getItem("integrala-lang");
+        if (q !== "en" && q !== "es") l = (l === "en" || l === "es") ? l : "es";
+        else l = q;
+        document.documentElement.setAttribute("data-lang", l);
+        document.documentElement.setAttribute("lang", l);
+      } catch (e) {}
+    })();
+  </script>
+
+  <!-- Structured data for search engines and AI agents -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://palumbon.github.io/integrala-landing/about.html#founder",
+        "name": "Nahuel Palumbo",
+        "jobTitle": "Fundador",
+        "worksFor": { "@id": "https://palumbon.github.io/integrala-landing/#organization" },
+        "alumniOf": { "@type": "CollegeOrUniversity", "name": "Universidad de Lille" },
+        "knowsAbout": [
+          "Compiladores JIT",
+          "Máquinas virtuales",
+          "Ingeniería de software",
+          "Inteligencia artificial aplicada"
+        ]
+      },
+      {
+        "@type": "AboutPage",
+        "@id": "https://palumbon.github.io/integrala-landing/about.html#page",
+        "url": "https://palumbon.github.io/integrala-landing/about.html",
+        "name": "INTEGRALA — Nosotros",
+        "inLanguage": "es",
+        "about": { "@id": "https://palumbon.github.io/integrala-landing/about.html#founder" },
+        "isPartOf": { "@id": "https://palumbon.github.io/integrala-landing/#website" }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#inicio" data-en="Skip to content">Saltar al contenido</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html" aria-label="INTEGRALA, inicio" data-en-aria-label="INTEGRALA, home">integrala<span>.</span></a>
+
+      <nav class="nav-links" aria-label="Navegación principal" data-en-aria-label="Main navigation">
+        <a href="index.html#enfoque" data-en="Approach">Enfoque</a>
+        <a href="index.html#capacidades" data-en="Capabilities">Capacidades</a>
+        <a href="index.html#experiencia" data-en="Disciplines">Disciplinas</a>
+        <a href="about.html" aria-current="page" data-en="About">Nosotros</a>
+      </nav>
+
+      <div class="header-actions">
+        <div class="lang-switch" role="group" aria-label="Idioma" data-en-aria-label="Language">
+          <button type="button" data-lang-set="es" aria-pressed="true">ES</button>
+          <button type="button" data-lang-set="en" aria-pressed="false">EN</button>
+        </div>
+
+        <button type="button" class="theme-switch" role="switch" aria-checked="false" aria-label="Tema oscuro" data-en-aria-label="Dark theme" data-theme-toggle>
+          <span class="ts-thumb" aria-hidden="true"></span>
+          <span class="ts-icon ts-sun" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="4"/>
+              <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>
+            </svg>
+          </span>
+          <span class="ts-icon ts-moon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/>
+            </svg>
+          </span>
+        </button>
+
+        <a class="btn-chat" href="https://professional-chat-pwa.vercel.app/" aria-label="Contactanos por chat" data-en-aria-label="Contact us via chat" title="Contactanos por chat" data-en-title="Contact us via chat">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8z"/>
+          </svg>
+          <span class="badge" aria-hidden="true"></span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Intro -->
+    <section class="hero" id="inicio" aria-labelledby="about-title">
+      <div class="wrap hero-grid">
+        <div class="hero-main">
+          <p class="label" data-en-html="About <span class='sep'>·</span> Engineering <span class='sep'>·</span> Research">Nosotros <span class="sep">·</span> Ingeniería <span class="sep">·</span> Investigación</p>
+          <h1 id="about-title" data-en-html="Software engineering with deep technical <em>roots.</em>">Ingeniería de software con raíces técnicas <em>profundas.</em></h1>
+          <p class="hero-lede" data-en="INTEGRALA is a software engineering boutique. We are a small team that understands technology deeply and works directly on what it builds.">INTEGRALA es una boutique de ingeniería de software. Somos un equipo pequeño que entiende la tecnología en profundidad y trabaja directamente sobre lo que construye.</p>
+          <div class="hero-actions">
+            <a class="btn" href="https://professional-chat-pwa.vercel.app/"><span data-en="Talk about your project">Hablemos de tu proyecto</span> <span class="arrow" aria-hidden="true">↗</span></a>
+            <a class="btn btn-ghost" href="index.html#capacidades" data-en="See our capabilities">Conocé nuestras capacidades</a>
+          </div>
+        </div>
+
+        <figure class="figure">
+          <figcaption class="figure-head">
+            <span data-en="Fig. 01 — From research to production">Fig. 01 — De la investigación a la producción</span>
+            <span class="status" aria-hidden="true"></span>
+          </figcaption>
+          <div class="figure-hub"><span class="dot" aria-hidden="true"></span>integrala</div>
+          <ul class="bus">
+            <li class="bus-item"><span class="bus-term" aria-hidden="true"></span><span class="t" data-en="Languages">Lenguajes</span><span class="s" data-en="Compilers and JIT">Compiladores y JIT</span></li>
+            <li class="bus-item"><span class="bus-term" aria-hidden="true"></span><span class="t" data-en="Virtual machines">Máquinas virtuales</span><span class="s" data-en="Memory and performance">Memoria y rendimiento</span></li>
+            <li class="bus-item"><span class="bus-term" aria-hidden="true"></span><span class="t" data-en="Software engineering">Ingeniería de software</span><span class="s" data-en="Design and quality">Diseño y calidad</span></li>
+            <li class="bus-item"><span class="bus-term" aria-hidden="true"></span><span class="t" data-en="Applied AI">IA aplicada</span><span class="s" data-en="Integrated with systems">Integrada con sistemas</span></li>
+          </ul>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Founder -->
+    <section class="section" id="fundador" aria-labelledby="fundador-title">
+      <div class="wrap approach-grid">
+        <div class="approach-intro">
+          <p class="label" data-en="Founder">Fundador</p>
+          <h2 id="fundador-title">Nahuel Palumbo</h2>
+          <p class="lede" data-en="Doctor in computer science, with a career focused on understanding how systems work inside.">Doctor en informática, con una trayectoria centrada en entender cómo funcionan los sistemas por dentro.</p>
+        </div>
+
+        <div class="about-body">
+          <p data-en="INTEGRALA starts from a simple idea: software is built better when it is understood deeply. Its founder, Nahuel Palumbo, holds a PhD in computer science and devoted his research to JIT compilers and virtual machines — the engines that translate and run the code of programming languages.">INTEGRALA parte de una idea simple: el software se construye mejor cuando se entiende en profundidad. Su fundador, Nahuel Palumbo, es doctor en informática y dedicó su investigación a los compiladores JIT y las máquinas virtuales: los motores que traducen y ejecutan el código de los lenguajes de programación.</p>
+          <p data-en="He developed Druid, a metacompiler for building JIT compilers in Pharo, and contributed to the Pharo virtual machine — interpreter, garbage collector and compilers — and to the language itself. That work requires mastering performance, memory, concurrency and language design.">Desarrolló Druid, un metacompilador para construir compiladores JIT en Pharo, y contribuyó a la máquina virtual de Pharo —intérprete, recolector de basura y compiladores— y al lenguaje. Ese trabajo exige dominar rendimiento, memoria, concurrencia y diseño de lenguajes.</p>
+          <p data-en="It is the same kind of judgment we apply to the systems we build: grounded decisions, measurable results and code that can be maintained and evolved. Research and teaching train you to verify instead of assume, and to explain decisions clearly.">Es la misma clase de criterio que aplicamos a los sistemas que construimos: decisiones fundamentadas, resultados medibles y código que se puede mantener y hacer evolucionar. La investigación y la docencia enseñan a verificar en lugar de suponer, y a explicar las decisiones con claridad.</p>
+
+          <ul class="about-list">
+            <li>
+              <span class="k" data-en="Education">Formación</span>
+              <span class="v" data-en="PhD in computer science (University of Lille, France), focused on JIT compilers and virtual machines.">Doctorado en informática (Universidad de Lille, Francia), centrado en compiladores JIT y máquinas virtuales.</span>
+            </li>
+            <li>
+              <span class="k" data-en="Research">Investigación</span>
+              <span class="v" data-en="Metacompilation of JIT compilers; Druid, a metacompiler for Pharo.">Metacompilación de compiladores JIT; Druid, un metacompilador para Pharo.</span>
+            </li>
+            <li>
+              <span class="k" data-en="Software">Software</span>
+              <span class="v" data-en="Contributions to the Pharo virtual machine: interpreter, garbage collector and compilers.">Contribuciones a la máquina virtual de Pharo: intérprete, recolector de basura y compiladores.</span>
+            </li>
+            <li>
+              <span class="k" data-en="Teaching">Docencia</span>
+              <span class="v" data-en="University teaching and training, including a course on garbage collection.">Docencia y formación universitaria, incluido un curso sobre recolección de basura.</span>
+            </li>
+            <li>
+              <span class="k" data-en="Engineering">Ingeniería</span>
+              <span class="v" data-en="Design and construction of software systems for organizations.">Diseño y construcción de sistemas de software para organizaciones.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- How we work -->
+    <section class="section" id="como-trabajamos" aria-labelledby="ct-title">
+      <div class="wrap approach-grid">
+        <div class="approach-intro">
+          <p class="label" data-en="How we work">Cómo trabajamos</p>
+          <h2 id="ct-title" data-en="Small team, senior work, direct contact.">Equipo pequeño, trabajo senior, contacto directo.</h2>
+          <p class="lede" data-en="We keep the team small on purpose: it lets us stay close to the problem and take responsibility for the result.">Mantenemos el equipo pequeño a propósito: nos permite estar cerca del problema y hacernos cargo del resultado.</p>
+        </div>
+
+        <ol class="principles">
+          <li class="principle">
+            <span class="n">01</span>
+            <div>
+              <h3 data-en="You work with the builders">Trabajás con quienes construyen</h3>
+              <p data-en="No intermediaries: you talk with the people who design and write the software.">Sin intermediarios: hablás con las personas que diseñan y escriben el software.</p>
+            </div>
+          </li>
+          <li class="principle">
+            <span class="n">02</span>
+            <div>
+              <h3 data-en="Senior decisions">Decisiones senior</h3>
+              <p data-en="The important technical decisions are made by experienced people, not delegated away.">Las decisiones técnicas importantes las toma gente con experiencia, no se delegan.</p>
+            </div>
+          </li>
+          <li class="principle">
+            <span class="n">03</span>
+            <div>
+              <h3 data-en="Direct communication">Comunicación directa</h3>
+              <p data-en="Clear conversations, explained decisions and no unnecessary jargon.">Conversaciones claras, decisiones explicadas y sin jerga innecesaria.</p>
+            </div>
+          </li>
+          <li class="principle">
+            <span class="n">04</span>
+            <div>
+              <h3 data-en="Focus on the result">Foco en el resultado</h3>
+              <p data-en="We care that the system works today and keeps working tomorrow.">Nos importa que el sistema funcione hoy y que siga funcionando mañana.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section band" id="contacto" aria-labelledby="contacto-title">
+      <div class="wrap cta">
+        <p class="label" data-en="Let's talk">Hablemos</p>
+        <h2 id="contacto-title" data-en="Tell us what you need to solve.">Contanos qué necesitás resolver.</h2>
+        <p class="lede" data-en="Start with the problem, even if it isn't clear yet. We answer with concrete questions and technical judgment, and tell you honestly whether we can help.">Empezá por el problema, aunque todavía no esté del todo claro. Te respondemos con preguntas concretas y criterio técnico, y te decimos con franqueza si podemos ayudarte.</p>
+        <a class="btn" href="https://professional-chat-pwa.vercel.app/"><span data-en="Contact us">Contactanos</span> <span class="arrow" aria-hidden="true">↗</span></a>
+        <p class="hero-note" data-en="Senior work from the first conversation.">Trabajo senior desde la primera conversación.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <a class="footer-brand" href="index.html">integrala.</a>
+      <p class="footer-tag" data-en="Software engineering for systems that evolve.">Ingeniería de software para sistemas que evolucionan.</p>
+      <p class="footer-legal">© <span id="year">2026</span> INTEGRALA</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,32 +1,38 @@
 # INTEGRALA
 
-> INTEGRALA integrates systems, automates processes, and incorporates artificial intelligence into real operations. Professional engineering for companies with complex systems and processes.
+> INTEGRALA is a software engineering boutique. We understand technology deeply and we design, build, integrate and evolve effective, maintainable software systems that are ready for change.
 
 Available languages: Spanish (default) and English. The site is served as Spanish at the root URL and as English at `?lang=en` (see `hreflang` alternates in the page). This summary is written in English.
 
-INTEGRALA is a team of professionals connected to technological universities. It combines experience in engineering, research, and training new professionals to build reliable solutions for industry.
+INTEGRALA is a small, technically strong team with direct communication and senior involvement. We avoid generic claims and exaggerated promises: our own website is part of the evidence of how we work.
 
-## What we solve
-- Too much manual work: people copying data, entering orders, or repeating tasks across tools.
-- Disconnected information: applications that do not communicate, duplicated data, and fragile integrations.
-- Stalled processes: spreadsheets and temporary solutions that become a critical part of operations.
-- Ideas that never reach production: incorporating AI integrated with data and systems in a reliable way.
+## Positioning
+We are a software engineering boutique, not just a system integration or automation agency. We emphasize deep technical knowledge, sound engineering decisions, maintainable architecture, system integration, critical evaluation of new technology, and applied AI as part of broader software engineering capabilities.
 
-## Services
-- Processes + technology: automation of everyday work to reduce repetitive tasks and errors. Example: entering and validating orders that are currently processed manually.
-- System + system: integration of internal and external systems so information flows. Example: synchronizing sales, inventory, billing, and logistics.
-- AI + systems: artificial intelligence incorporated into existing processes, with permissions, validations, and oversight appropriate to the risk. Example: an agent that retrieves information and prepares actions for human approval.
+## Engineering approach
+- Understand before building: first the domain, the business goals and the real constraints; then the technology.
+- Grounded technical decisions: languages, architectures and tools chosen for their trade-offs and maintenance cost, not for being trendy.
+- Build to maintain: readable, tested and documented code that other people can understand and change.
+- Anticipate evolution: systems that can change in parts, without rewriting everything for every new requirement.
 
-## Working principles
-- We understand before we build: first the process, the problem, and the outcome; then the technology.
-- Rigorous engineering: solutions that can be tested, maintained, and evolved, with attention to quality and security.
-- Shared experience: knowledge transfer between university and industry and training of new professionals on real projects.
+## Capabilities
+- Software engineering: design and construction of tailored applications and services, with clear architecture, tested code and maintenance in mind.
+- System integration: connecting applications, services and data so information flows reliably between internal and external systems.
+- Modernization and evolution: incremental updating of existing systems, reducing risk and preserving what already works.
+- Applied AI: artificial intelligence incorporated where it adds real value, integrated with the organization's data and processes.
+
+## Technical expertise
+We work on the fundamentals, not a wall of technology logos: architecture and design, languages and platforms (compilers, virtual machines, JIT, memory, concurrency), data and integration, quality and operations (testing, CI/CD, observability, performance, security), applied AI, and product and domain.
+
+## About
+INTEGRALA was founded by Nahuel Palumbo, doctor in computer science. His research focused on JIT compilers and virtual machines: he developed Druid, a metacompiler for Pharo, and contributed to the Pharo virtual machine (interpreter, garbage collector and compilers) and to the language. He also works in university teaching and in open-source and educational software projects.
 
 ## Contact
-- Chat (bot or team member): https://professional-chat-pwa.vercel.app/
+- Contact: https://professional-chat-pwa.vercel.app/
 
 ## Links
 - [Website (Spanish, default)](https://palumbon.github.io/integrala-landing/)
 - [Website (English)](https://palumbon.github.io/integrala-landing/?lang=en)
+- [About](https://palumbon.github.io/integrala-landing/about.html)
 - [Sitemap](https://palumbon.github.io/integrala-landing/sitemap.xml)
-- [Structured data](https://palumbon.github.io/integrala-landing/) (schema.org: Organization, WebSite, ProfessionalService)
+- [Structured data](https://palumbon.github.io/integrala-landing/) (schema.org: Organization, WebSite, ProfessionalService, Person, AboutPage)

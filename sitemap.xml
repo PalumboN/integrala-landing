@@ -10,4 +10,13 @@
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
+  <url>
+    <loc>https://palumbon.github.io/integrala-landing/about.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://palumbon.github.io/integrala-landing/about.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://palumbon.github.io/integrala-landing/about.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://palumbon.github.io/integrala-landing/about.html"/>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>

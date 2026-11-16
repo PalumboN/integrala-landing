@@ -1,5 +1,5 @@
 # INTEGRALA — https://palumbon.github.io/integrala-landing/
-# Static, public landing page. All content is in the HTML; no login, no paywall.
+# Static, public website (landing + about). All content is in the HTML; no login, no paywall.
 # Search engines, social crawlers and AI agents are welcome.
 
 User-agent: *
