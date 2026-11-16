@@ -1,77 +1,37 @@
 # INTEGRALA
 
-**Software engineering boutique.**
+**Ingeniería para que los negocios funcionen mejor con tecnología.**
 
-We understand technology deeply. We design, build, integrate and evolve
-effective, maintainable software systems that are ready for change.
+INTEGRALA es una empresa de ingeniería que ayuda a negocios reales a mejorar y evolucionar con tecnología. Entendemos cómo funciona cada negocio y construimos soluciones que conectan sistemas, simplifican procesos y resuelven problemas que las herramientas de catálogo no alcanzan.
 
-INTEGRALA is a small, technically strong team. We work with organizations whose
-systems and processes are complex, and we take responsibility for the result:
-sound engineering decisions, maintainable architecture and software that keeps
-evolving instead of being rewritten. No buzzwords, no exaggerated promises —
-just engineering, explained clearly.
+No somos una empresa de IA ni una fábrica de software genérica. Somos un socio de ingeniería: la tecnología es un medio, no un fin. La IA es solo una herramienta más cuando realmente aporta valor.
 
-## What we do
+## Qué hacemos
 
-- **Software engineering** — we design and build applications and services from
-  scratch, with clear architecture, tested code and maintenance in mind.
-- **System integration** — we connect applications, services and data so
-  information flows reliably between internal and external systems.
-- **Modernization and evolution** — we update existing systems incrementally,
-  reducing risk and preserving what already works.
-- **Applied AI** — we incorporate artificial intelligence where it adds real
-  value, integrated with the organization's data and processes.
+- **Integramos sistemas** — conectamos herramientas para que compartan información y trabajen juntas.
+- **Automatizamos procesos** — reducimos tareas manuales y simplificamos la operación.
+- **Desarrollamos soluciones a medida** — construimos lo que hace falta cuando las herramientas existentes no alcanzan.
+- **Modernizamos y hacemos evolucionar sistemas** — mejoramos lo que ya existe para acompañar nuevas necesidades y el crecimiento.
 
-## How we work
+## Cómo trabajamos
 
-- **Understand before building.** First the domain, the business goals and the
-  real constraints; then the technology.
-- **Grounded technical decisions.** Languages, architectures and tools chosen
-  for their trade-offs and maintenance cost, not for being trendy.
-- **Build to maintain.** Readable, tested and documented code that other people
-  can understand and change.
-- **Anticipate evolution.** Systems that can change in parts, without rewriting
-  everything for every new requirement.
+- **Primero entendemos el negocio.** Muchas veces el problema no es la falta de software, sino cómo se conectan las herramientas, cómo circula la información o cómo se ejecutan los procesos.
+- **Decisiones de ingeniería con criterio.** Elegimos y construimos soluciones según el problema real, no por moda tecnológica.
+- **Soluciones que se puedan sostener.** Buscamos que lo que construimos sea claro, mantenible y preparado para evolucionar.
 
-## Technical depth
+## Con quién queremos trabajar
 
-We work on the fundamentals, not a wall of logos:
+Nos enfocamos inicialmente en negocios como supermercados y retail, restaurantes y grupos gastronómicos, y ecommerce o negocios online. Estos son ejemplos de contextos y problemas que podemos ayudar a resolver, no afirmaciones sobre proyectos o clientes anteriores.
 
-- **Architecture and design** — system design, evolvable architectures,
-  domain-driven design, patterns, trade-offs.
-- **Languages and platforms** — compilers and interpreters, virtual machines,
-  JIT compilation, memory management, concurrency.
-- **Data and integration** — data modeling, APIs and contracts, messaging, ETL,
-  consistency.
-- **Quality and operations** — testing, CI/CD, observability, performance,
-  security.
-- **Applied AI** — language models, RAG, agents, evaluation, integration with
-  systems.
+Si algo de esto te resuena, podemos conversar sobre tu caso.
 
-Knowing how languages and systems actually work is what lets us make better
-decisions and solve problems that have no off-the-shelf answer.
+## Contacto
 
-## The team
+Contanos qué está pasando en tu negocio. No hace falta que tengas definida la solución.
 
-INTEGRALA was founded by **Nahuel Palumbo**, doctor in computer science. His
-research focused on JIT compilers and virtual machines: he developed Druid, a
-metacompiler for Pharo, and contributed to the Pharo virtual machine
-(interpreter, garbage collector and compilers) and to the language itself. That
-background in performance, memory, concurrency and language design is applied
-directly to the systems we build.
-
-We keep the team small on purpose. You work directly with the people who design
-and write the software — no intermediaries, senior decisions and direct
-communication.
-
-## Get in touch
-
-Tell us what you need to solve — you don't need a closed specification to reach
-out. We reply with concrete questions and tell you honestly whether we can help.
-
-- **Website:** https://palumbon.github.io/integrala-landing/
-- **Contact:** https://professional-chat-pwa.vercel.app/
+- **Sitio web:** https://palumbon.github.io/integrala-landing/
+- **Contacto:** https://professional-chat-pwa.vercel.app/
 
 ---
 
-<sub>This repository hosts the INTEGRALA website.</sub>
+<sub>Este repositorio contiene el sitio web de INTEGRALA. Ver [BRAND.md](BRAND.md) para el posicionamiento y las pautas de comunicación.</sub>

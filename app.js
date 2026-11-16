@@ -116,32 +116,32 @@
         scenario: "Escenario",
         node: "Nodo",
         scenarios: {
-          disconnected: { title: "Desconectado", text: "Sistemas, datos, procesos e IA existen, pero cada uno opera aislado." },
-          connected: { title: "Conectado", text: "Las conexiones activas permiten que la información y las decisiones fluyan con continuidad entre los temas." },
-          evolving: { title: "Evolucionando", text: "Cada nodo puede evolucionar y dividirse en nuevas partes sin reconstruir la base del ecosistema." }
+          disconnected: { title: "Desconectado", text: "Sistemas, datos, procesos y herramientas existen, pero cada uno opera aislado." },
+          connected: { title: "Conectado", text: "Las conexiones activas permiten que la información y el trabajo fluyan con continuidad." },
+          evolving: { title: "Evolucionando", text: "Cada parte puede crecer y adaptarse a nuevas necesidades sin reconstruir todo desde cero." }
         },
         nodes: {
-          core: { title: "INTEGRALA", text: "Núcleo que conecta y orquesta sistemas, datos, procesos e IA con un criterio común." },
-          systems: { title: "Sistemas", text: "Aplicaciones y servicios que sostienen la operación y se integran con el resto del entorno." },
-          data: { title: "Datos", text: "Información compartida con trazabilidad y consistencia para alimentar decisiones y procesos." },
-          processes: { title: "Procesos", text: "Flujos de trabajo que coordinan personas, reglas y sistemas en cada etapa." },
-          ai: { title: "IA", text: "Capacidades inteligentes aplicadas donde aportan valor, conectadas al contexto real." }
+          core: { title: "INTEGRALA", text: "Criterio de ingeniería para conectar, ordenar y hacer evolucionar cómo funciona el negocio." },
+          systems: { title: "Sistemas", text: "Aplicaciones y servicios que sostienen la operación y necesitan trabajar en conjunto." },
+          data: { title: "Datos", text: "Información confiable y disponible para que circule entre áreas, herramientas y decisiones." },
+          processes: { title: "Procesos", text: "Formas de trabajo que coordinan personas, tareas y sistemas en el día a día." },
+          ai: { title: "Herramientas", text: "Tecnología y capacidades —incluida la IA cuando aporta valor— integradas al funcionamiento real del negocio." }
         }
       },
       en: {
         scenario: "Scenario",
         node: "Node",
         scenarios: {
-          disconnected: { title: "Disconnected", text: "Systems, data, processes and AI exist, but each one operates in isolation." },
-          connected: { title: "Connected", text: "Active connections let information and decisions flow continuously between the topics." },
-          evolving: { title: "Evolving", text: "Each node can evolve and split into new parts without rebuilding the ecosystem's foundation." }
+          disconnected: { title: "Disconnected", text: "Systems, data, processes and tools exist, but each one operates in isolation." },
+          connected: { title: "Connected", text: "Active connections let information and work flow continuously." },
+          evolving: { title: "Evolving", text: "Each part can grow and adapt to new needs without rebuilding everything from scratch." }
         },
         nodes: {
-          core: { title: "INTEGRALA", text: "The core that connects and orchestrates systems, data, processes and AI with a shared approach." },
-          systems: { title: "Systems", text: "Applications and services that support operations and integrate with the rest of the environment." },
-          data: { title: "Data", text: "Shared information with traceability and consistency to inform decisions and processes." },
-          processes: { title: "Processes", text: "Workflows that coordinate people, rules and systems at every stage." },
-          ai: { title: "AI", text: "Intelligent capabilities applied where they add value, connected to real context." }
+          core: { title: "INTEGRALA", text: "Engineering judgment to connect, organize, and evolve how the business operates." },
+          systems: { title: "Systems", text: "Applications and services that support operations and need to work together." },
+          data: { title: "Data", text: "Reliable information available to flow across teams, tools, and decisions." },
+          processes: { title: "Processes", text: "Ways of working that coordinate people, tasks, and systems day to day." },
+          ai: { title: "Tools", text: "Technology and capabilities—including AI when it genuinely adds value—integrated into how the business actually works." }
         }
       }
     };

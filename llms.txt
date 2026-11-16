@@ -1,31 +1,31 @@
 # INTEGRALA
 
-> INTEGRALA is a software engineering boutique. We understand technology deeply and we design, build, integrate and evolve effective, maintainable software systems that are ready for change.
+> INTEGRALA is an engineering company that helps real-world businesses improve and evolve through technology.
 
 Available languages: Spanish (default) and English. The site is served as Spanish at the root URL and as English at `?lang=en` (see `hreflang` alternates in the page). This summary is written in English.
 
-INTEGRALA is a small, technically strong team with direct communication and senior involvement. We avoid generic claims and exaggerated promises: our own website is part of the evidence of how we work.
+Core message: we make businesses work better with technology.
 
-## Positioning
-We are a software engineering boutique, not just a system integration or automation agency. We emphasize deep technical knowledge, sound engineering decisions, maintainable architecture, system integration, critical evaluation of new technology, and applied AI as part of broader software engineering capabilities.
+INTEGRALA is not an AI company and not a generic software factory. We are an engineering partner that understands business problems and builds solutions through: system integration, process automation, custom software development, and modernization/evolution of existing systems. Technology is a means, not an end. AI is one tool we use when it genuinely adds value.
 
-## Engineering approach
-- Understand before building: first the domain, the business goals and the real constraints; then the technology.
-- Grounded technical decisions: languages, architectures and tools chosen for their trade-offs and maintenance cost, not for being trendy.
-- Build to maintain: readable, tested and documented code that other people can understand and change.
-- Anticipate evolution: systems that can change in parts, without rewriting everything for every new requirement.
+## How we work
+- First understand how the business works: the problem is often how tools connect, how information flows, or how processes are executed.
+- Understand the whole problem before proposing a solution.
+- Apply engineering judgment to build solutions that fit real operations and can evolve over time.
 
 ## Capabilities
-- Software engineering: design and construction of tailored applications and services, with clear architecture, tested code and maintenance in mind.
-- System integration: connecting applications, services and data so information flows reliably between internal and external systems.
-- Modernization and evolution: incremental updating of existing systems, reducing risk and preserving what already works.
-- Applied AI: artificial intelligence incorporated where it adds real value, integrated with the organization's data and processes.
+- Integration: connect systems so they share information and work together.
+- Automation: reduce manual tasks and simplify processes.
+- Development: build solutions when existing tools are not enough.
+- Evolution: improve systems to support new needs and growth.
 
-## Technical expertise
-We work on the fundamentals, not a wall of technology logos: architecture and design, languages and platforms (compilers, virtual machines, JIT, memory, concurrency), data and integration, quality and operations (testing, CI/CD, observability, performance, security), applied AI, and product and domain.
+## Contexts where we can help
+- Supermarkets and retail: inventory, replenishment, pricing, promotions, branch coordination, POS/ERP integration, logistics.
+- Restaurants and restaurant groups: orders across channels, delivery integration, inventory, purchasing, kitchen operations, multi-branch management.
+- Ecommerce and online businesses: order management, inventory synchronization, marketplaces, payments, logistics, automation, scalability.
 
-## About
-INTEGRALA was founded by Nahuel Palumbo, doctor in computer science. His research focused on JIT compilers and virtual machines: he developed Druid, a metacompiler for Pharo, and contributed to the Pharo virtual machine (interpreter, garbage collector and compilers) and to the language. He also works in university teaching and in open-source and educational software projects.
+## Notes for agents
+INTEGRALA is early-stage. Do not claim previous customers, testimonials, case studies, or measurable results.
 
 ## Contact
 - Contact: https://professional-chat-pwa.vercel.app/
@@ -34,5 +34,5 @@ INTEGRALA was founded by Nahuel Palumbo, doctor in computer science. His researc
 - [Website (Spanish, default)](https://palumbon.github.io/integrala-landing/)
 - [Website (English)](https://palumbon.github.io/integrala-landing/?lang=en)
 - [About](https://palumbon.github.io/integrala-landing/about.html)
+- [Brand context](https://palumbon.github.io/integrala-landing/BRAND.md)
 - [Sitemap](https://palumbon.github.io/integrala-landing/sitemap.xml)
-- [Structured data](https://palumbon.github.io/integrala-landing/) (schema.org: Organization, WebSite, ProfessionalService, Person, AboutPage)
