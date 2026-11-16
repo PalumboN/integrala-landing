@@ -125,7 +125,7 @@
           systems: { title: "Sistemas", text: "Aplicaciones y servicios que sostienen la operación y necesitan trabajar en conjunto." },
           data: { title: "Datos", text: "Información confiable y disponible para que circule entre áreas, herramientas y decisiones." },
           processes: { title: "Procesos", text: "Formas de trabajo que coordinan personas, tareas y sistemas en el día a día." },
-          ai: { title: "Herramientas", text: "Tecnología y capacidades —incluida la IA cuando aporta valor— integradas al funcionamiento real del negocio." }
+          ai: { title: "Herramientas", text: "Nuevas tecnología integradas al funcionamiento real del negocio." }
         }
       },
       en: {
@@ -141,13 +141,13 @@
           systems: { title: "Systems", text: "Applications and services that support operations and need to work together." },
           data: { title: "Data", text: "Reliable information available to flow across teams, tools, and decisions." },
           processes: { title: "Processes", text: "Ways of working that coordinate people, tasks, and systems day to day." },
-          ai: { title: "Tools", text: "Technology and capabilities—including AI when it genuinely adds value—integrated into how the business actually works." }
+          ai: { title: "Tools", text: "New technologies integrated into how the business actually works." }
         }
       }
     };
 
-    var currentScenario = "disconnected";
-    var pinnedNode = "core";
+    var currentScenario = "connected";
+    var pinnedNode = null;
     var hoverNode = null;
 
     function lang() { return root.getAttribute("data-lang") === "en" ? "en" : "es"; }
@@ -230,5 +230,69 @@
 
     window.__integralaRefreshEcosystem = function () { syncVisualState(); };
     syncVisualState();
+
+    /* Mobile carousel */
+    (function () {
+      var carousel = figure ? figure.querySelector(".eco-carousel") : null;
+      if (!carousel) return;
+      var track = carousel.querySelector(".eco-carousel-track");
+      var dotsWrap = carousel.querySelector(".eco-dots");
+      var cards = track ? Array.prototype.slice.call(track.querySelectorAll(".eco-card")) : [];
+      if (!track || !dotsWrap || !cards.length) return;
+
+      var idx = 0;
+      var timer = null;
+
+      cards.forEach(function (_, i) {
+        var b = document.createElement("button");
+        b.type = "button";
+        b.className = "eco-dot" + (i === 0 ? " is-active" : "");
+        b.setAttribute("aria-label", String(i + 1));
+        b.addEventListener("click", function () { go(i, true); });
+        dotsWrap.appendChild(b);
+      });
+      var dots = Array.prototype.slice.call(dotsWrap.querySelectorAll(".eco-dot"));
+
+      function setActive(i) {
+        idx = i;
+        dots.forEach(function (d, j) { d.classList.toggle("is-active", j === i); });
+      }
+
+      function go(i, manual) {
+        i = (i + cards.length) % cards.length;
+        track.scrollTo({ left: cards[i].offsetLeft - track.offsetLeft, behavior: "smooth" });
+        setActive(i);
+        if (manual) restart();
+      }
+
+      function onScroll() {
+        var w = track.clientWidth || 1;
+        var i = Math.round(track.scrollLeft / w);
+        if (i < 0) i = 0;
+        if (i >= cards.length) i = cards.length - 1;
+        setActive(i);
+      }
+
+      var scrollTimer;
+      track.addEventListener("scroll", function () {
+        clearTimeout(scrollTimer);
+        scrollTimer = setTimeout(onScroll, 80);
+      }, { passive: true });
+
+      function start() {
+        if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+        stop();
+        timer = setInterval(function () { go(idx + 1, false); }, 3800);
+      }
+      function stop() { if (timer) { clearInterval(timer); timer = null; } }
+      function restart() { stop(); start(); }
+
+      carousel.addEventListener("mouseenter", stop);
+      carousel.addEventListener("mouseleave", start);
+      carousel.addEventListener("touchstart", stop, { passive: true });
+      carousel.addEventListener("touchend", start, { passive: true });
+
+      start();
+    })();
   })();
 })();

@@ -209,7 +209,7 @@
       <div class="wrap hero-grid">
         <div class="hero-main">
           <p class="label" data-en-html="ENGINEERING <span class='sep'>·</span> INTEGRATION <span class='sep'>·</span> TECHNOLOGY SOLUTIONS">INGENIERÍA <span class="sep">·</span> INTEGRACIÓN <span class="sep">·</span> SOLUCIONES TECNOLÓGICAS</p>
-          <h1 id="hero-title" data-en-html="We make businesses work better with <em>technology.</em>">Hacemos que los negocios funcionen mejor con <em>tecnología.</em></h1>
+          <h1 id="hero-title" data-en-html="We make businesses work better with <em>technology</em>">Hacemos que los negocios funcionen mejor con <em>tecnología</em></h1>
           <p class="hero-lede" data-en="We understand how your business works and build technology to help it evolve. We connect systems, simplify processes, and create solutions for problems that off-the-shelf tools can't solve.">Entendemos cómo funciona tu negocio y desarrollamos tecnología para hacerlo evolucionar. Conectamos sistemas, simplificamos procesos y construimos soluciones para problemas que no se resuelven con herramientas de catálogo.</p>
           <div class="hero-actions">
             <a class="btn" href="https://professional-chat-pwa.vercel.app/"><span data-en="Tell us what you need to solve">Contanos qué necesitás resolver</span> <span class="arrow" aria-hidden="true">↗</span></a>
@@ -222,17 +222,17 @@
           <figcaption class="figure-head eco-head-info">
             <div class="eco-info" aria-live="polite">
               <p class="eco-info-kicker" data-en="Scenario">Escenario</p>
-              <p class="eco-info-title" id="eco-info-title" data-en="Disconnected">Desconectado</p>
-              <p class="eco-info-text" id="eco-info-text" data-en="Systems, data, processes and tools exist, but each one operates in isolation.">Sistemas, datos, procesos y herramientas existen, pero cada uno opera aislado.</p>
+              <p class="eco-info-title" id="eco-info-title" data-en="Connected">Conectado</p>
+              <p class="eco-info-text" id="eco-info-text" data-en="Active connections let information and work flow continuously.">Las conexiones activas permiten que la información y el trabajo fluyan con continuidad.</p>
             </div>
             <span class="status" aria-hidden="true"></span>
           </figcaption>
 
           <div class="eco-controls" role="group" aria-label="Escenarios" data-en-aria-label="Scenarios">
-            <button type="button" class="eco-scenario is-active" data-scenario="disconnected" aria-pressed="true">
+            <button type="button" class="eco-scenario" data-scenario="disconnected" aria-pressed="false">
               <span data-en="Disconnected">Desconectado</span>
             </button>
-            <button type="button" class="eco-scenario" data-scenario="connected" aria-pressed="false">
+            <button type="button" class="eco-scenario is-active" data-scenario="connected" aria-pressed="true">
               <span data-en="Connected">Conectado</span>
             </button>
             <button type="button" class="eco-scenario" data-scenario="evolving" aria-pressed="false">
@@ -240,7 +240,7 @@
             </button>
           </div>
 
-          <div class="eco-stage" data-scenario="disconnected">
+          <div class="eco-stage" data-scenario="connected">
             <svg class="eco-svg" viewBox="0 0 320 320" role="img" aria-labelledby="eco-title eco-desc">
               <title id="eco-title" data-en="Interactive system map around INTEGRALA">Mapa interactivo de sistema alrededor de INTEGRALA</title>
               <desc id="eco-desc" data-en="Nodes for Systems, Data, Processes and Tools connected to a central core. Scenarios show disconnected, connected and evolving states.">Nodos de Sistemas, Datos, Procesos y Herramientas conectados a un núcleo central. Los escenarios muestran estados desconectado, conectado y en evolución.</desc>
@@ -383,6 +383,37 @@
               </g>
             </svg>
           </div>
+
+          <div class="eco-carousel" aria-label="Cómo conectamos tu negocio" data-en-aria-label="How we connect your business">
+            <div class="eco-carousel-track">
+              <article class="eco-card">
+                <span class="eco-card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg></span>
+                <h3 data-en="INTEGRALA">INTEGRALA</h3>
+                <p data-en="Engineering judgment to connect, organize, and evolve how the business operates.">Criterio de ingeniería para conectar, ordenar y hacer evolucionar cómo funciona el negocio.</p>
+              </article>
+              <article class="eco-card">
+                <span class="eco-card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="6" rx="2"/><rect x="3" y="14" width="18" height="6" rx="2"/><path d="M7 7h.01M7 17h.01"/></svg></span>
+                <h3 data-en="Systems">Sistemas</h3>
+                <p data-en="Applications and services that support operations and need to work together.">Aplicaciones y servicios que sostienen la operación y necesitan trabajar en conjunto.</p>
+              </article>
+              <article class="eco-card">
+                <span class="eco-card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v6c0 1.66 3.58 3 8 3s8-1.34 8-3V5"/><path d="M4 11v6c0 1.66 3.58 3 8 3s8-1.34 8-3v-6"/></svg></span>
+                <h3 data-en="Data">Datos</h3>
+                <p data-en="Reliable information available to flow across teams, tools, and decisions.">Información confiable y disponible para que circule entre áreas, herramientas y decisiones.</p>
+              </article>
+              <article class="eco-card">
+                <span class="eco-card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h6v6H4zM14 13h6v6h-6z"/><path d="M10 8h4v9"/><path d="M14 17h-4"/></svg></span>
+                <h3 data-en="Processes">Procesos</h3>
+                <p data-en="Ways of working that coordinate people, tasks, and systems day to day.">Formas de trabajo que coordinan personas, tareas y sistemas en el día a día.</p>
+              </article>
+              <article class="eco-card">
+                <span class="eco-card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 7l3 3-3 3"/><path d="M10 17l-3-3 3-3"/><path d="M13 4l-2 16"/></svg></span>
+                <h3 data-en="Tools">Herramientas</h3>
+                <p data-en="New technologies integrated into how the business actually works.">Nuevas tecnología integradas al funcionamiento real del negocio.</p>
+              </article>
+            </div>
+            <div class="eco-dots" role="tablist" aria-label="Diapositivas" data-en-aria-label="Slides"></div>
+          </div>
         </figure>
       </div>
     </section>
@@ -392,7 +423,7 @@
       <div class="wrap approach-grid">
         <div class="approach-intro">
           <p class="label" data-en="Approach">Enfoque</p>
-          <h2 id="enfoque-title" data-en="First, we understand how your business works.">Primero entendemos cómo funciona tu negocio.</h2>
+          <h2 id="enfoque-title" data-en="First, we understand how your business works">Primero entendemos cómo funciona tu negocio</h2>
         </div>
 
         <div class="about-body">
@@ -407,7 +438,7 @@
       <div class="wrap">
         <header class="sec-head">
           <p class="label" data-en="Capabilities">Capacidades</p>
-          <h2 id="capacidades-title" data-en="What we do to improve how your business works.">Lo que hacemos para mejorar cómo funciona tu negocio.</h2>
+          <h2 id="capacidades-title" data-en="What we do to improve how your business works">Lo que hacemos para mejorar cómo funciona tu negocio</h2>
           <p class="lede" data-en="We focus on what each situation needs to work better.">Nos enfocamos en lo que cada situación necesita para funcionar mejor.</p>
         </header>
 
@@ -467,54 +498,57 @@
       </div>
     </section>
 
-    <!-- Industries / examples -->
+    <!-- Success cases / examples -->
     <section class="section" id="industrias" aria-labelledby="industrias-title">
       <div class="wrap">
         <header class="sec-head">
           <p class="label" data-en="Where we can help">Dónde podemos ayudar</p>
-          <h2 id="industrias-title" data-en="Some of the contexts where this comes up.">Algunos contextos donde esto aparece.</h2>
-          <p class="lede" data-en="A few common situations where we can help.">Algunas situaciones habituales en las que podemos ayudar.</p>
+          <h2 id="industrias-title" data-en="Concrete situations where we can help">Situaciones concretas donde podemos ayudar</h2>
+          <p class="lede" data-en="Examples of situations where better-connected systems and clearer processes make day-to-day work easier.">Ejemplos de situaciones en las que conectar sistemas y ordenar procesos puede facilitar el trabajo del día a día.</p>
         </header>
 
         <ol class="expertise">
           <li class="expertise-row">
-            <span class="expertise-num">01</span>
+            <span class="expertise-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 9l1-4h16l1 4"/>
+                <path d="M4 9v10h16V9"/>
+                <path d="M9 19v-6h6v6"/>
+                <path d="M9 13h6"/>
+              </svg>
+            </span>
             <div class="expertise-body">
               <h3 data-en="Supermarkets and retail">Supermercados y retail</h3>
-              <ul class="chips">
-                <li class="chip" data-en="Inventory">Inventario</li>
-                <li class="chip" data-en="Replenishment">Reposición</li>
-                <li class="chip" data-en="Pricing and promotions">Precios y promociones</li>
-                <li class="chip" data-en="Branch coordination">Coordinación entre sucursales</li>
-                <li class="chip" data-en="POS/ERP integration">Integración con POS/ERP</li>
-                <li class="chip" data-en="Logistics">Logística</li>
-              </ul>
+              <p data-en="Inventory, replenishment, pricing, promotions and branch coordination flowing better between POS, ERP and logistics.">Inventario, reposición, precios, promociones y coordinación entre sucursales, con mejor flujo entre POS, ERP y logística.</p>
             </div>
           </li>
           <li class="expertise-row">
-            <span class="expertise-num">02</span>
+            <span class="expertise-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 3h2v8a4 4 0 0 0 4 4h0a4 4 0 0 0 4-4V3h2"/>
+                <path d="M7 3v8"/>
+                <path d="M11 3v8"/>
+                <path d="M10 15v6"/>
+                <path d="M18 3v18"/>
+                <path d="M18 3a3 3 0 0 1 3 3v4h-3"/>
+              </svg>
+            </span>
             <div class="expertise-body">
               <h3 data-en="Restaurants and restaurant groups">Restaurantes y grupos gastronómicos</h3>
-              <ul class="chips">
-                <li class="chip" data-en="Orders across channels">Pedidos por distintos canales</li>
-                <li class="chip" data-en="Delivery integration">Integración con delivery</li>
-                <li class="chip" data-en="Inventory and purchasing">Inventario y compras</li>
-                <li class="chip" data-en="Kitchen operations">Operación de cocina</li>
-                <li class="chip" data-en="Multi-branch management">Gestión de múltiples locales</li>
-              </ul>
+              <p data-en="Orders across channels, delivery, inventory, purchasing and kitchen operations coordinated across one or more locations.">Pedidos por distintos canales, delivery, inventario, compras y operación de cocina coordinados en uno o varios locales.</p>
             </div>
           </li>
           <li class="expertise-row">
-            <span class="expertise-num">03</span>
+            <span class="expertise-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="9" cy="20" r="1.5"/>
+                <circle cx="17" cy="20" r="1.5"/>
+                <path d="M3 4h2l2.2 10.5a2 2 0 0 0 2 1.5h7.5a2 2 0 0 0 2-1.6L20 7H6.2"/>
+              </svg>
+            </span>
             <div class="expertise-body">
               <h3 data-en="Ecommerce and online businesses">Ecommerce y negocios online</h3>
-              <ul class="chips">
-                <li class="chip" data-en="Order management">Gestión de pedidos</li>
-                <li class="chip" data-en="Inventory synchronization">Sincronización de inventario</li>
-                <li class="chip" data-en="Marketplaces">Marketplaces</li>
-                <li class="chip" data-en="Payments and logistics">Pagos y logística</li>
-                <li class="chip" data-en="Automation and scalability">Automatización y escalabilidad</li>
-              </ul>
+              <p data-en="Orders, inventory, marketplaces, payments and logistics kept in sync so the operation can scale smoothly.">Pedidos, inventario, marketplaces, pagos y logística sincronizados para que la operación pueda escalar con orden.</p>
             </div>
           </li>
         </ol>
@@ -525,7 +559,7 @@
     <section class="section band" id="contacto" aria-labelledby="contacto-title">
       <div class="wrap cta">
         <p class="label" data-en="Let's talk">Hablemos</p>
-        <h2 id="contacto-title" data-en="Technology should make your business work better.">La tecnología tiene que ayudar a que tu negocio funcione mejor.</h2>
+        <h2 id="contacto-title" data-en="Technology should make your business work better">La tecnología tiene que ayudar a que tu negocio funcione mejor</h2>
         <p class="lede" data-en="Tell us what's happening in your business. You don't need to have the solution figured out.">Contanos qué está pasando en tu negocio. No hace falta que tengas definida la solución.</p>
         <a class="btn" href="https://professional-chat-pwa.vercel.app/"><span data-en="Let's talk about your business">Hablemos de tu negocio</span> <span class="arrow" aria-hidden="true">↗</span></a>
       </div>
